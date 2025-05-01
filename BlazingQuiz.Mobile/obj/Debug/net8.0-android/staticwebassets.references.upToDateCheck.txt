@@ -14,3 +14,4 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\stati
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
