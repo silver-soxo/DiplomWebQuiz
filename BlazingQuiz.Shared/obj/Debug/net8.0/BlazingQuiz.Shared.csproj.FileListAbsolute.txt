@@ -1,0 +1,14 @@
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\bin\Debug\net8.0\BlazingQuiz.Shared.deps.json
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\bin\Debug\net8.0\BlazingQuiz.Shared.dll
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\bin\Debug\net8.0\BlazingQuiz.Shared.pdb
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\BlazingQuiz.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\BlazingQuiz.Shared.AssemblyInfoInputs.cache
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\BlazingQuiz.Shared.AssemblyInfo.cs
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\BlazingQuiz.Shared.csproj.CoreCompileInputs.cache
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\BlazingQuiz.Shared.dll
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\refint\BlazingQuiz.Shared.dll
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\BlazingQuiz.Shared.pdb
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\ref\BlazingQuiz.Shared.dll
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\bin\Debug\net8.0\BlazingQuiz.Shared.runtimeconfig.json
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\BlazingQuiz.Shared.csproj.AssemblyReference.cache
+C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\obj\Debug\net8.0\BlazingQuiz.Shared.genruntimeconfig.cache

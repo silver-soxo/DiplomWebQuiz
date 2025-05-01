@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "rglfGiIxxRzaXulcpz8Nn4CFzcvioPptW9Xk3n5vhMU=",
+  "Source": "BlazingQuiz.Api",
+  "BasePath": "_content/BlazingQuiz.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
