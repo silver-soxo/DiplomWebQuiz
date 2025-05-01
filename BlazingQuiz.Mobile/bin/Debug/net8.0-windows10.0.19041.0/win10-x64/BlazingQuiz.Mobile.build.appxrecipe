@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-D5J96QQ</Machine>
+    <Machine>SOHO</Machine>
     <WindowsUser>andre</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,221 +10,203 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.blazingquiz.mobile</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
-    <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BlazingQuiz.Mobile.runtimeconfig.json">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BlazingQuiz.Mobile.runtimeconfig.json">
       <PackagePath>BlazingQuiz.Mobile.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BlazingQuiz.Mobile.dll">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BlazingQuiz.Mobile.dll">
       <PackagePath>BlazingQuiz.Mobile.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BlazingQuiz.Mobile.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\wwwroot\css\app.css">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\wwwroot\css\bootstrap\bootstrap.min.css">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\wwwroot\css\bootstrap\bootstrap.min.css.map">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\wwwroot\favicon.png">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\wwwroot\favicon.png">
       <PackagePath>wwwroot\favicon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\wwwroot\index.html">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
-      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
-      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
-      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
-      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
-      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
-      <PackagePath>OpenSans-Regular.ttf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
-      <PackagePath>appicon.ico</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
-      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
-      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
-      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
-      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
-      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
-      <PackagePath>appiconLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
-      <PackagePath>appiconLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
-      <PackagePath>appiconLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
-      <PackagePath>appiconLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
-      <PackagePath>appiconLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
-      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
-      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
-      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
-      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
-      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
-      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
-      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
-      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
-      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
-      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
-      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
-      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
-      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
-      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
-      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
-      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
-      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
-      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
-      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
-      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
-      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
-      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
-      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
-      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
-      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+      <PackagePath>appiconLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -571,22 +553,22 @@
     <AppxPackagedFile Include="C:\Users\andre\.nuget\packages\microsoft.windowsappsdk\1.5.240802000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared.Components\bin\Debug\net8.0\BlazingQuiz.Shared.Components.dll">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\bin\Debug\net8.0\BlazingQuiz.Shared.Components.dll">
       <PackagePath>BlazingQuiz.Shared.Components.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared\bin\Debug\net8.0\BlazingQuiz.Shared.dll">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared\bin\Debug\net8.0\BlazingQuiz.Shared.dll">
       <PackagePath>BlazingQuiz.Shared.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Mobile\Microsoft.Maui.Controls.HotReload.Forms.dll">
+    <AppxPackagedFile Include="D:\Programs\VisualStudio\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Mobile\Microsoft.Maui.Controls.HotReload.Forms.dll">
       <PackagePath>Microsoft.Maui.Controls.HotReload.Forms.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Mobile\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll">
+    <AppxPackagedFile Include="D:\Programs\VisualStudio\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Mobile\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll">
       <PackagePath>Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Mobile\Microsoft.VisualStudio.DesignTools.TapContract.dll">
+    <AppxPackagedFile Include="D:\Programs\VisualStudio\Community\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Mobile\Microsoft.VisualStudio.DesignTools.TapContract.dll">
       <PackagePath>Microsoft.VisualStudio.DesignTools.TapContract.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\BlazingQuiz.Mobile.deps.json">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\BlazingQuiz.Mobile.deps.json">
       <PackagePath>BlazingQuiz.Mobile.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
@@ -784,13 +766,13 @@
     <AppxPackagedFile Include="C:\Users\andre\.nuget\packages\microsoft.codeanalysis.workspaces.common\4.5.0\lib\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll">
       <PackagePath>zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.development.json">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.development.json">
       <PackagePath>BlazingQuiz.Shared.Components.staticwebassets.runtime.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.endpoints.json">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.endpoints.json">
       <PackagePath>BlazingQuiz.Shared.Components.staticwebassets.endpoints.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.build.endpoints.json">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.build.endpoints.json">
       <PackagePath>BlazingQuiz.Mobile.staticwebassets.endpoints.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\andre\.nuget\packages\microsoft.maui.controls.compatibility\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
@@ -802,25 +784,25 @@
     <AppxPackagedFile Include="C:\Users\andre\.nuget\packages\microsoft.maui.core\8.0.100\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\BlazingQuiz.Mobile.styles.css">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\BlazingQuiz.Mobile.styles.css">
       <PackagePath>wwwroot\BlazingQuiz.Mobile.styles.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\BlazingQuiz.Mobile.bundle.scp.css">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\BlazingQuiz.Mobile.bundle.scp.css">
       <PackagePath>wwwroot\BlazingQuiz.Mobile.fdyqsk1qdq.bundle.scp.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared.Components\obj\Debug\net8.0\scopedcss\projectbundle\BlazingQuiz.Shared.Components.bundle.scp.css">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\scopedcss\projectbundle\BlazingQuiz.Shared.Components.bundle.scp.css">
       <PackagePath>wwwroot\_content\BlazingQuiz.Shared.Components\BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared.Components\wwwroot\background.png">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\wwwroot\background.png">
       <PackagePath>wwwroot\_content\BlazingQuiz.Shared.Components\background.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Shared.Components\wwwroot\exampleJsInterop.js">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\wwwroot\exampleJsInterop.js">
       <PackagePath>wwwroot\_content\BlazingQuiz.Shared.Components\exampleJsInterop.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\Components\Layout\MainLayout.razor.css">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\Components\Layout\NavMenu.razor.css">
+    <AppxPackagedFile Include="D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

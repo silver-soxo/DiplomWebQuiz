@@ -1,1 +1,1 @@
-C:\PROG\BlazingQuiz.Web\BlazingQuiz.Mobile\BlazingQuiz.Mobile.csproj;x64
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\BlazingQuiz.Mobile.csproj;x64
