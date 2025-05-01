@@ -1,6 +1,0 @@
-﻿namespace BlazingQuiz.Api
-{
-    public class text
-    {
-    }
-}
