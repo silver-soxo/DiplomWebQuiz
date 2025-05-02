@@ -1,4 +1,23 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
+@inject QuizAuthStateProvider QuizAuthStateProvider
+
+@if (QuizAuthStateProvider.IsInitializing)
+{
+    <p>Инициализация...</p>
+}
+else
+{
+    @Body
+}
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        while (QuizAuthStateProvider.IsInitializing)
+        {
+            await Task.Delay(500);
+        }
+    }
+}
 

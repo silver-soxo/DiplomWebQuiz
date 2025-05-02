@@ -16,17 +16,17 @@
                 <h1 class="h3">Авторизация</h1>
             </div>
 
-            <AuthorizeView>
-                <Authorizing>
-                    <p>Авторизация...</p>
-                </Authorizing>
-                <NotAuthorized>
-                    <p>Неавторизован</p>
-                </NotAuthorized>
-                <Authorized>
-                    <p>Неавторизован: @context.User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Name)?.Value</p>
-                </Authorized>
-            </AuthorizeView>
+            @* <AuthorizeView> *@
+            @*     <Authorizing> *@
+            @*         <p>Авторизация...</p> *@
+            @*     </Authorizing> *@
+            @*     <NotAuthorized> *@
+            @*         <p>Неавторизован</p> *@
+            @*     </NotAuthorized> *@
+            @*     <Authorized> *@
+            @*         <p>Неавторизован: @context.User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Name)?.Value</p> *@
+            @*     </Authorized> *@
+            @* </AuthorizeView> *@
 
             <hr />
             <EditForm Model="_model" OnValidSubmit="LoginAsync">
@@ -69,6 +69,17 @@
     private LoginDto _model = new();
     private bool _isBusy;
     private string? _error;
+
+    protected override void OnInitialized()
+    {
+        if (QuizAuthStateProvider.IsLoggedIn)
+        {
+            NavigationManager.NavigateTo("/", replace: true);
+            return;
+        }
+        
+    }
+
     private async Task LoginAsync()
     {
         _error = null;
