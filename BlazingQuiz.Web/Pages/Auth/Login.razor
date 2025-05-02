@@ -1,10 +1,12 @@
 ﻿@page "/auth/login"
+@using BlazingQuiz.Web.Auth
 
 @layout EmptyLayout
 
 @inject NavigationManager NavigationManager
 
 @inject IAuthApi AuthApi
+@inject QuizAuthStateProvider QuizAuthStateProvider
 
 <div class="container">
     <div class="row vh-100">
@@ -13,6 +15,19 @@
             <div class="mt-3">
                 <h1 class="h3">Авторизация</h1>
             </div>
+
+            <AuthorizeView>
+                <Authorizing>
+                    <p>Авторизация...</p>
+                </Authorizing>
+                <NotAuthorized>
+                    <p>Неавторизован</p>
+                </NotAuthorized>
+                <Authorized>
+                    <p>Неавторизован: @context.User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Name)?.Value</p>
+                </Authorized>
+            </AuthorizeView>
+
             <hr />
             <EditForm Model="_model" OnValidSubmit="LoginAsync">
                 <DataAnnotationsValidator />
@@ -67,7 +82,12 @@
                 _error = authResponse.ErrorMessage;
                 return;
             }
-            //set the token in some storage
+            // set the token in some storage
+            // Implement Auth State Provider
+            var loggedInUser = authResponse.User;
+            // Уставновка состояния входа в систему
+            await QuizAuthStateProvider.SetLoginAsync(loggedInUser);
+
             NavigationManager.NavigateTo("/");
 
         }

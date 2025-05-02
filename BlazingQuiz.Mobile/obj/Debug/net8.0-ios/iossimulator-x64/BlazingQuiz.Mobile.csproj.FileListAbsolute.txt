@@ -893,3 +893,10 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Mobile.pdb
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Mobile.genruntimeconfig.cache
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\ref\BlazingQuiz.Mobile.dll
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiInfo.plist
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiSplash.storyboard
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\MauiInfo.plist
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Regular.ttf

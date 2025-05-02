@@ -2319,3 +2319,13 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\stamp\_C
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\splash.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\splash.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\splash.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\splash.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\splash.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\sp\values\maui_colors.xml
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Regular.ttf
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-android\resizetizer\A52E68AE06E1868A-files.cache
