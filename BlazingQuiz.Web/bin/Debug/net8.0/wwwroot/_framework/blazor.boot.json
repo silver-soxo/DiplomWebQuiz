@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazingQuiz.Web",
   "resources": {
-    "hash": "sha256-lyekg+DK/IxD8eCOh+bFmOK7hSZzeI7g0Hakb6KUhxM=",
+    "hash": "sha256-Oj3V0A1Bko+Oa6tcqS9HLY/llTy771XguZo40f1IrS0=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -48,12 +48,16 @@
       "Microsoft.Extensions.DependencyInjection.wasm": "sha256-CS+QrPLaogl32aUg+ES1Ef5QGKoMyjt3V+wGoiG+tpw=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.wasm": "sha256-NICKEw2hjoBhl1lvxOBh8cxOIN8kkrGHz3pvV1eLLbY=",
       "Microsoft.Extensions.DependencyModel.wasm": "sha256-IyD4KaP+t3H5fGWjmDcAAB0lQmXUDHqEiD+6bzCfwxI=",
+      "Microsoft.Extensions.Diagnostics.wasm": "sha256-ocjYvUYaqVp/zqoZgO2Jz9xDvZzLM7qR2qkAidM5DsU=",
+      "Microsoft.Extensions.Diagnostics.Abstractions.wasm": "sha256-zZcH54DRmcuIAi/NQWV5AKf4l8zFSHQ5r+ZK4gGwnrY=",
       "Microsoft.Extensions.FileProviders.Abstractions.wasm": "sha256-IUopixuV8E09mP+TIgRp/lXEbeacXbUTW7cu0v5B9Tc=",
       "Microsoft.Extensions.FileProviders.Physical.wasm": "sha256-MS+zB0xkKhKk/QdE32ZwKtdlrLMLI/y2NAKPUWhcBVg=",
       "Microsoft.Extensions.FileSystemGlobbing.wasm": "sha256-AnWUKd0qJ8ZNKkRC0AFK2cjjszB7reXiP+bXdIi8bic=",
+      "Microsoft.Extensions.Http.wasm": "sha256-EOHR/vTMOWbdshFAa+n27+jPgCvrczn8XGFLj2P06UI=",
       "Microsoft.Extensions.Logging.wasm": "sha256-pa0M3exxNvk6g5anUwlaPC99Afawsi1GZvJeU1q/ZGM=",
       "Microsoft.Extensions.Logging.Abstractions.wasm": "sha256-uf1KJp0fVm0d3Bs2JFD1oxo857dVH+MA9AF/tlH5YEw=",
       "Microsoft.Extensions.Options.wasm": "sha256-5/m+yVFGRuY+N4jQnD+QETKH0AfhAsnVze5dJ5ogIVM=",
+      "Microsoft.Extensions.Options.ConfigurationExtensions.wasm": "sha256-C8ZA1VhhrMRPf8Qqv+OrW9za3ggJkCM9i1d8R/F1ETc=",
       "Microsoft.Extensions.Primitives.wasm": "sha256-pVrYOTfjb2ITls3LKIByW1t8jwOAWFhmkIVDewtJ1GE=",
       "Microsoft.Identity.Client.wasm": "sha256-Qm/kDiKinCROz6BefDdDJXxitZ1tRnBTsOWky0j7kOs=",
       "Microsoft.Identity.Client.Extensions.Msal.wasm": "sha256-U9IwizYlWG7hPugaM5WL6eO316VUsIeRozvRYrtjEZY=",
@@ -68,6 +72,8 @@
       "Microsoft.SqlServer.Server.wasm": "sha256-Fig+5hq00gGQlXAgSnyFlUlWyhlx9f+yPJb4INt3gNc=",
       "Microsoft.Win32.SystemEvents.wasm": "sha256-1kUoFxSGzlbndQM4zal3G/YBdouUTf444lDjqhuWALU=",
       "Mono.TextTemplating.wasm": "sha256-7QALsAd1aPqJcMOmMeb5rR069c58graCXhDCadJIhoE=",
+      "Refit.wasm": "sha256-uJUtWt8eM/ePcbus4MhX5wqCbiSAZFZwFrEfOk/an+g=",
+      "Refit.HttpClientFactory.wasm": "sha256-G7336RoHqRgehbdtHIiDPXaQUHKv6WXqY4ns20xrnPo=",
       "System.CodeDom.wasm": "sha256-AhGB+QX9g4JW3PgS/4tQoG2De0vrOhtsNU5hYnniKj0=",
       "System.Composition.AttributedModel.wasm": "sha256-bQEHGV2MLXgOHm/+7pinmkxbO5kluprl9Afqez10IZ0=",
       "System.Composition.Convention.wasm": "sha256-Twq0yTkL1uwXMJ7+401C7kPnt211MZMRop4tctp6IuM=",
@@ -251,14 +257,14 @@
       "mscorlib.wasm": "sha256-BeLfFpg9iS3DkEdywsYY7sV6ML3knqkMaMq0JBEbWlw=",
       "netstandard.wasm": "sha256-VkjUtJ6DK5bFTc2JwwGHmQY3tBcNSC7zMSJXuiXcnJA=",
       "System.Private.CoreLib.wasm": "sha256-VIQEPUSb48N39LR+ncGDP5xU02xuRbyZU8MhMho26wQ=",
-      "BlazingQuiz.Shared.Components.wasm": "sha256-O73cszGuJZJXR1FkKEDR+/cVRGkEzAjyjqj29JKhltE=",
-      "BlazingQuiz.Shared.wasm": "sha256-bQjhjHB3Bp0VDLGSEkwWBwEZIMtcUequKH9p6PRfWoM=",
-      "BlazingQuiz.Web.wasm": "sha256-q2Tz9cJauHPXxc02GWz0AenrTn76DPY0WBrfQWwwVqA="
+      "BlazingQuiz.Shared.Components.wasm": "sha256-1VTmBFs6Tr0xgxY6+kAscnyboyjTLxLMnMmVY8DObm0=",
+      "BlazingQuiz.Shared.wasm": "sha256-GtCCBcXT5Ezaxxizk/mlL0j5endAE8gxrkFtV9iB8ec=",
+      "BlazingQuiz.Web.wasm": "sha256-ddpklY3tvl5b4GGp5N7D0HY33IswP5pzCHLCuI7mnmw="
     },
     "pdb": {
-      "BlazingQuiz.Shared.Components.pdb": "sha256-EiRDcqsJqKT1Isdf9vSQVAkMNF+VhJ3z1S04Y7YLxsg=",
-      "BlazingQuiz.Shared.pdb": "sha256-BY1KmwTbS5QgK2ifJYW6cx3SvY/cSbVomFdFKmmXTPM=",
-      "BlazingQuiz.Web.pdb": "sha256-gom2gYJt9C4+uK4odbX2BgKcTbN41R3S/3D4+nId/9k="
+      "BlazingQuiz.Shared.Components.pdb": "sha256-H8N0WkYCPdRa2hgBcqPDu0px/ABS1xuQO0Fx9aQPWkY=",
+      "BlazingQuiz.Shared.pdb": "sha256-pEP6nVXdMMZYIT9R28PddotkPOgiRWjRzCOZCx79ynM=",
+      "BlazingQuiz.Web.pdb": "sha256-bZS3MupyKkgUA4Oxfhk4w1XNApaF+kAnN4an6nQ2MU4="
     },
     "satelliteResources": {
       "cs": {
