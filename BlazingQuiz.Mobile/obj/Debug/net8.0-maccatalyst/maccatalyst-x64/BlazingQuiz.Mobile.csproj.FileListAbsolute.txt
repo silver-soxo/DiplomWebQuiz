@@ -850,7 +850,9 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\macc
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
@@ -873,5 +875,3 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\macc
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\BlazingQuiz.Mobile.pdb
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\BlazingQuiz.Mobile.genruntimeconfig.cache
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\BlazingQuiz.Mobile.dll
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf

@@ -830,6 +830,7 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Shared.Components.pdb
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Shared.pdb
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\bundle\BlazingQuiz.Mobile.styles.css
@@ -849,6 +850,11 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.inputs
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.inputs
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.inputs
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiInfo.plist
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiSplash.storyboard
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.stamp
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
@@ -867,7 +873,9 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.stamp
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.outputs
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\MauiInfo.plist
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.stamp
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Regular.ttf
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\actool\_PartialAppManifest.items
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\actool\_BundleResourceWithLogicalName.items
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\actool\_ProcessedImageAssetsPath.items
@@ -892,10 +900,3 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Mobile.pdb
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Mobile.genruntimeconfig.cache
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\ref\BlazingQuiz.Mobile.dll
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiInfo.plist
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\MauiSplash.storyboard
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449.png
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\MauiInfo.plist
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Regular.ttf

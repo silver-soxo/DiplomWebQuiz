@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YyGLZ/1XStsvFmrVbtQyqpzlWLtodXAy6XR2KfcFGOc=",
+  "Hash": "UgAkmVGd7lm12iWDTQNr++9cgk4X36vl9BpCrP7lWNw=",
   "Source": "BlazingQuiz.Mobile",
   "BasePath": "/",
   "Mode": "Root",
@@ -356,7 +356,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 11:49:01 GMT"
+          "Value": "Sat, 03 May 2025 16:04:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -393,7 +393,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 11:49:01 GMT"
+          "Value": "Sat, 03 May 2025 16:04:21 GMT"
         }
       ],
       "EndpointProperties": [
@@ -516,7 +516,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 11:49:06 GMT"
+          "Value": "Sat, 03 May 2025 16:04:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -553,7 +553,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 11:49:06 GMT"
+          "Value": "Sat, 03 May 2025 16:04:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -602,7 +602,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 11:49:06 GMT"
+          "Value": "Sat, 03 May 2025 16:04:23 GMT"
         },
         {
           "Name": "Link",
@@ -651,7 +651,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 11:49:06 GMT"
+          "Value": "Sat, 03 May 2025 16:04:23 GMT"
         },
         {
           "Name": "Link",
