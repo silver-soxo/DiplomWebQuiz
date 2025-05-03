@@ -25,6 +25,7 @@ namespace BlazingQuiz.Web.Auth
         public override Task<AuthenticationState> GetAuthenticationStateAsync() => 
             _authStateTask;
 
+        // Информация о вошедшем в систему пользователе
         public LoggedInUser User { get; private set; }
         // Обработка случаев с нулевым значением
         public bool IsLoggedIn => User?.Id > 0;

@@ -1,0 +1,133 @@
+﻿@page "/admin/manage-categories"
+
+@inject ICategoryApi CategoryApi
+
+<div class="container">
+    <h1>Управление категориями</h1>
+    <hr />
+    <div class="row">
+        <div class="col-sm-4">
+            <EditForm Model="_category" OnValidSubmit="SaveCategoryAsync">
+                <DataAnnotationsValidator />
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="m-0">Добавить/Удалить Категорию</h4>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Название категории
+                                </label>
+                                <InputText @bind-Value="_category.Name" class="form-control form-control-sm" />
+                                <ValidationMessage For="() => _category.Name" />
+                            </div>
+                            @if (_errorMessage != null)
+                            {
+                                <div class="mb-3 border border-danger border-1 d-flex justify-content-between gap-2 align-items-start">
+                                    <p class="m-0 p-1">@_errorMessage</p>
+                                    <button type="button" class="btn btn-sm btn-danger" @onclick="() => _errorMessage = null">Нажать</button>
+                                </div>
+                            }
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center ">
+                            @if (!_isBusy)
+                            {
+                                <button type="button" class="btn btn-sn btn-danger" @onclick="() => _category = new()">Отмена</button>
+                                <button type="submit" class="btn btn-sn btn-success">Сохранить Категорию</button>
+                            }
+                            else
+                            {
+                                <button type="button" disabled lass="btn btn-sn btn-secondary">Отмена</button>
+                                <button type="button" disabled class="btn btn-sn btn-secondary">Сохранение Категории...</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </EditForm>
+        </div>
+        <div class="col-sm-6 ms-auto">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Номер</th>
+                        <th>Имя</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (_categories.Length == 0)
+                    {
+                        <tr>
+                            <td colspan="4">
+                                <p class="text-danger h5">Категории не найдены</p>
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        int number = 1;
+                        @foreach(var category in _categories)
+                        {
+                            <tr>
+                                <td>@(number++)</td>
+                                <td>@category.Id</td>
+                                <td>@category.Name</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" @onclick="() => OnEditCategory(category)">Редактировать</button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@code {
+    private CategoryDto[] _categories = [];
+    private CategoryDto _category = new();
+
+    private bool _isBusy;
+    private string _errorMessage;
+
+    protected override async Task OnInitializedAsync() => await LoadCategoriesAsync();
+
+    private async Task LoadCategoriesAsync()
+    {
+        _categories = await CategoryApi.GetCategoriesAsync();
+    }
+
+    private void OnEditCategory(CategoryDto category)
+    {
+        _category = category;
+    }
+
+    private async Task SaveCategoryAsync()
+    {
+        try
+        {
+            _isBusy = true;
+            var responce = await CategoryApi.SaveCategoryAsync(_category);
+            if (!responce.IsSuccess)
+            {
+                // Сообщение об ошибке
+                _errorMessage = responce.ErrorMessage ?? "Неизвестная ошибка при сохранении категорий";
+                return;
+            }
+            // Вывод сообщения об успехе или сброс формы
+            // Перезагрузка категорий
+            _category = new();
+            await LoadCategoriesAsync();
+        }
+        catch(Exception ex)
+        {
+            //Вывод сообщения об ошибке
+            _errorMessage = ex.Message;
+        }
+        finally
+        {
+            _isBusy = false;
+        }
+    }
+}

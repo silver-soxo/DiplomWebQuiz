@@ -20,5 +20,43 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "BlazingQuiz.Api.Endpoints.CategoryEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCategoryEndpoints\u003Eb__0_0",
+    "RelativePath": "api/categories/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlazingQuiz.Api.Endpoints.CategoryEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCategoryEndpoints\u003Eb__0_1",
+    "RelativePath": "api/categories/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BlazingQuiz.Shared.DTOs.CategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

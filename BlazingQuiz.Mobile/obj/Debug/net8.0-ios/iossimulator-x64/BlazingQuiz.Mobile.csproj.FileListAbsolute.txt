@@ -830,7 +830,6 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Shared.Components.pdb
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Shared.pdb
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\bundle\BlazingQuiz.Mobile.styles.css

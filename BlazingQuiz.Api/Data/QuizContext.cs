@@ -34,7 +34,7 @@ namespace BlazingQuiz.Api.Data
             {
                 Id = 1,
                 Name = "Andrey",
-                Email = "adbmin@bk.ru",
+                Email = "admin@bk.ru",
                 Phone = "89777441323",
                 Role = nameof(UserRole.Admin),
                 IsApproved = true
