@@ -1,1 +1,1 @@
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\BlazingQuiz.Mobile.csproj;x64
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\BlazingQuiz.Mobile.csproj;x64

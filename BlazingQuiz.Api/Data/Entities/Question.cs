@@ -14,6 +14,6 @@ namespace BlazingQuiz.Api.Data.Entities
         [ForeignKey(nameof(QuizId))]
         public virtual Quiz Quiz { get; set; }
 
-        public virtual ICollection<Option> Options { get; set; } = [];
+        public virtual ICollection<Option> Options { get; set; }
     }
 }
