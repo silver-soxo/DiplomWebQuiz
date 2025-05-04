@@ -163,7 +163,6 @@
 	private async Task SaveQuizAsync()
 	{
 		var errorMessege = _quiz.Validate();
-
 		if (!string.IsNullOrEmpty(errorMessege))
 		{
 			await ShowAlertAsync(errorMessege);
@@ -171,13 +170,13 @@
 		}
 
 		var response = await QuizApi.SaveQuizAsync(_quiz);
-		if (response.IsSuccess)
+		if (!response.IsSuccess)
 		{
 			await ShowAlertAsync(response.ErrorMessage);
 			return;
 		}
 
-		NavigationManager.NavigateTo("admin/manage-quizes");
+		NavigationManager.NavigateTo("/admin/manage-quizes");
 	}
 
 	private async Task ShowAlertAsync(string message, string title = "Ошибка") =>

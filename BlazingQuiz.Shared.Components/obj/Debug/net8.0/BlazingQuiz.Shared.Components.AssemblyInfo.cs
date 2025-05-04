@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazingQuiz.Shared.Components")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+953dca7a761e292ef5eb74e863b950fb004d3d9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+234e4e7fd342aa3f2432bebc56c881725bc08a9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazingQuiz.Shared.Components")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazingQuiz.Shared.Components")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
