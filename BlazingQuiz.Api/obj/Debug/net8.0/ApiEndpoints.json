@@ -99,6 +99,28 @@
   },
   {
     "ContainingType": "BlazingQuiz.Api.Endpoints.QuizEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapQuizEndpoints\u003Eb__0_3",
+    "RelativePath": "api/quizes/{quizId:guid}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quizId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlazingQuiz.Api.Endpoints.QuizEndpoints\u002B\u003C\u003Ec",
     "Method": "\u003CMapQuizEndpoints\u003Eb__0_2",
     "RelativePath": "api/quizes/{quizId:guid}/questions",
     "HttpMethod": "GET",
