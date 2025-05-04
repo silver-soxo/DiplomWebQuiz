@@ -58,5 +58,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "BlazingQuiz.Api.Endpoints.QuizEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapQuizEndpoints\u003Eb__0_0",
+    "RelativePath": "api/quizes/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BlazingQuiz.Shared.DTOs.QuizSaveDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

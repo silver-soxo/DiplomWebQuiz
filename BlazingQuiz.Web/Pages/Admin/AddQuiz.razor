@@ -2,11 +2,13 @@
 
 @inject IQuizApi QuizApi
 @inject ICategoryApi CategoryApi
+@inject IJSRuntime JsRuntime
+@inject NavigationManager NavigationManager
 
 <h1>Создание теста</h1>
 <hr />
 
-<EditForm Model="_quiz">
+<EditForm Model="_quiz" OnValidSubmit="SaveQuizAsync">
 	<DataAnnotationsValidator />
 	<div class="row">
 
@@ -31,7 +33,7 @@
 		<div class="col-sm-3">
 			<div class="mb-3">
 				<label class="form-label">Название</label>
-				<InputText @bind-Value="_quiz.Name" class="form-controle"/>
+				<InputText @bind-Value="_quiz.Name" class="form-control"/>
 				<ValidationMessage For="() => _quiz.Name" />
 			</div>
 		</div>
@@ -41,7 +43,7 @@
 		<div class="col-sm-3">
 			<div class="mb-3">
 				<label class="form-label">Количество вопросов</label>
-				<InputNumber @bind-Value="_quiz.TotalQuestions" class="form-controle"/>
+				<InputNumber @bind-Value="_quiz.TotalQuestions" class="form-control"/>
 				<ValidationMessage For="() => _quiz.TotalQuestions" />
 			</div>
 		</div>
@@ -51,7 +53,7 @@
 		<div class="col-sm-3">
 			<div class="mb-3">
 				<label class="form-label">Время (в минутах)</label>
-				<InputNumber @bind-Value="_quiz.TimeInMinutes" class="form-controle"/>
+				<InputNumber @bind-Value="_quiz.TimeInMinutes" class="form-control"/>
 				<ValidationMessage For="() => _quiz.TimeInMinutes" />
 			</div>
 		</div>
@@ -106,7 +108,7 @@
 		<!-- Кнопка добавления вопроса -->
 
 		<div class="mt-3 d-flex justify-content-center">
-			<button type="button" class="btn-info" @onclick="() => _quiz.Questions.Add(GetDefaultEmptyQuestion())">Добавить вопрос</button>
+			<button type="button" class="btn btn-info" @onclick="() => _quiz.Questions.Add(GetDefaultEmptyQuestion())">Добавить вопрос</button>
 		</div>
 
 		<!-- Преключатель активности теста -->
@@ -119,6 +121,11 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Кнопка сохранения теста -->
+
+		<hr />
+		<button type="button" class="btn btn-success">Сохранить тест</button>
 	</div>
 
 </EditForm>
@@ -152,4 +159,27 @@
 		}
 		o.IsCorrect = true;
 	}
+
+	private async Task SaveQuizAsync()
+	{
+		var errorMessege = _quiz.Validate();
+
+		if (!string.IsNullOrEmpty(errorMessege))
+		{
+			await ShowAlertAsync(errorMessege);
+			return;
+		}
+
+		var response = await QuizApi.SaveQuizAsync(_quiz);
+		if (response.IsSuccess)
+		{
+			await ShowAlertAsync(response.ErrorMessage);
+			return;
+		}
+
+		NavigationManager.NavigateTo("admin/manage-quizes");
+	}
+
+	private async Task ShowAlertAsync(string message, string title = "Ошибка") =>
+		await JsRuntime.InvokeVoidAsync("alert", $"{title}\n{message}");
 }

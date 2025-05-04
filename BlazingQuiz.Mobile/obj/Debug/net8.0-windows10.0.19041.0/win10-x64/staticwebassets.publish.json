@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IP3fQRrFl7Rye0rbpT4mVoGd3sbiY6lWzgTpjucuKDc=",
+  "Hash": "QW3/AqW3465zLpJaWJcg5UPgMB0YcSJf8CXX7o7IIy8=",
   "Source": "BlazingQuiz.Mobile",
   "BasePath": "/",
   "Mode": "Root",
@@ -356,7 +356,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 18:57:45 GMT"
+          "Value": "Sun, 04 May 2025 03:35:05 GMT"
         }
       ],
       "EndpointProperties": [
@@ -393,7 +393,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 18:57:45 GMT"
+          "Value": "Sun, 04 May 2025 03:35:05 GMT"
         }
       ],
       "EndpointProperties": [

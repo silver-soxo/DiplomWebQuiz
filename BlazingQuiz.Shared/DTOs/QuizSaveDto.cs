@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BlazingQuiz.Shared.DTOs
 {
-    public class QuizSaveDto
+    public class QuizSaveDto 
     {
         public Guid Id { get; set; }
         [Required, MaxLength(100)]
@@ -24,7 +24,30 @@ namespace BlazingQuiz.Shared.DTOs
         public int TimeInMinutes { get; set; }
         public bool IsActive { get; set; }
         public List<QuestionDto> Questions { get; set; } = [];
+
+        //Обработчик ошибок при сохранении теста
+
+        public string? Validate()
+        {
+            if (TotalQuestions != Questions.Count)
+                return "Количество вопросов не совпадает с числом указанном в поле 'Количество вопросов'";
+
+            if (Questions.Any(q => string.IsNullOrWhiteSpace(q.Text)))
+                return "Отсутвует текст вопроса";
+
+            if (Questions.Any(q => q.Options.Count < 2))
+                return "Для вопросов требуется минимум 2 варианта ответа";
+
+            if (Questions.Any(q => !q.Options.Any(o => o.IsCorrect)))
+                return "Для каждого вопроса необходимо указать правильный вариант ответа";
+
+            if (Questions.Any(q => q.Options.Any(o => string.IsNullOrWhiteSpace(o.Text))))
+                return "Отсутвует текст вопроса";
+
+            return null;
+        }
     }
+
     public class OptionDto
     {
         public int Id { get; set; }
