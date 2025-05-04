@@ -30,10 +30,14 @@ await builder.Build().RunAsync();
 static void ConfigureRefit(IServiceCollection services)
 {
     const string ApiBaseUrl = "https://localhost:7054";
+
     services.AddRefitClient<IAuthApi>()
         .ConfigureHttpClient(SetHttpClient);
 
     services.AddRefitClient<ICategoryApi>(GetRefitSettings)
+        .ConfigureHttpClient(SetHttpClient);
+
+    services.AddRefitClient<IQuizApi>(GetRefitSettings)
         .ConfigureHttpClient(SetHttpClient);
 
     static void SetHttpClient(HttpClient httpClient) => 
