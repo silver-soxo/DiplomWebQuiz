@@ -1,6 +1,14 @@
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+html, body, * {
+    font-family: "Onest", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+/*
+    цвет бекграунда
+        мб стоит поменять?
+html, body, * {
+    background-color: цвет;
+}
+*/
 
 h1:focus {
     outline: none;

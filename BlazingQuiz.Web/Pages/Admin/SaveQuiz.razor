@@ -6,8 +6,7 @@
 @inject IJSRuntime JsRuntime
 @inject NavigationManager NavigationManager
 
-<h1>@(IsEditCase ? "Обновление тестирования" : "Добавление нового тестирования")</h1>
-<hr />
+<SectionContent SectionName="pageTitle">@(IsEditCase ? "Редактирование теста" : "Создание теста")</SectionContent>
 
 <EditForm Model="_quiz" OnValidSubmit="SaveQuizAsync">
 	<DataAnnotationsValidator />
@@ -59,10 +58,10 @@
 			</div>
 		</div>
 
-		<hr />
-		<h4 class="">Вопросы</h4>
+		<hr class="my-2"/>
+		<h5 class="fw-bold">Вопросы</h5>
 
-		<ol>
+		<ol class="mb-0">
 			@foreach (var q in _quiz.Questions)
 			{
 				var random = Guid.NewGuid();
@@ -73,7 +72,7 @@
 
 					<textarea @bind="q.Text" class="form-control" rows="3"></textarea>
 
-					<h6>Варинты ответа</h6>
+					<h6 class="my-2 fw-bold">Варинты ответа</h6>
 
 					<ol>
 						@foreach (var o in q.Options)
@@ -108,25 +107,36 @@
 
 		<!-- Кнопка добавления вопроса -->
 
-		<div class="mt-3 d-flex justify-content-center">
-			<button type="button" class="btn btn-info" @onclick="() => _quiz.Questions.Add(GetDefaultEmptyQuestion())">Добавить вопрос</button>
+		<div class="mt-0 mb-3 d-flex justify-content-center">
+			<button type="button" class="btn btn-info" @onclick="() => _quiz.Questions.Add(GetDefaultEmptyQuestion())">+ Добавить вопрос</button>
 		</div>
 
-		<!-- Преключатель активности теста -->
+		<hr />
 
-		<div class="col-sm-4">
-			<div class="mb-3">
+		<div class="row mb-5 alogn-items-center">
+			<div class="col-sm-3 ms-auto d-flex justify-content-end">
+
+				<!-- Преключатель активности теста -->
+
 				<div class="form-check form-switch">
 					<InputCheckbox @bind-Value="_quiz.IsActive" class="form-check-input" type="checkbox" role="switch" id="quizIsActive" />
 					<label class="form-check-label" for="quizIsActive">Тест активен?</label>
 				</div>
 			</div>
+			<div class="col-sm-5 d-grid me-auto">
+
+				<!-- Кнопка сохранения теста -->
+
+				<button type="submit" class="btn btn-success">Сохранить тест</button>
+			</div>
 		</div>
+		<div class="d-flex mb-5 justify-content-center align-items-center gap-3">
 
-		<!-- Кнопка сохранения теста -->
+			
+			
 
-		<hr />
-		<button type="submit" class="btn btn-success">Сохранить тест</button>
+			
+		</div>	
 	</div>
 
 </EditForm>

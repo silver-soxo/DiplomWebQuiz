@@ -2,17 +2,18 @@
 
 @inject ICategoryApi CategoryApi
 
+<SectionContent SectionName="pageTitle">Управление категориями</SectionContent>
+
 <div class="container">
-    <h1>Управление категориями</h1>
-    <hr />
     <div class="row">
         <div class="col-sm-4">
             <EditForm Model="_category" OnValidSubmit="SaveCategoryAsync">
                 <DataAnnotationsValidator />
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="m-0">Добавить/Удалить Категорию</h4>
-                        <div class="card-body">
+                <div class="bg-white p-3">
+                    <div class="">
+                        <h5 class="m-0 fw-bold">Добавить/Удалить Категорию</h5>
+                        <hr />
+                        <div class="">
                             <div class="mb-3">
                                 <label class="form-label">
                                     Название категории
@@ -28,7 +29,7 @@
                                 </div>
                             }
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center ">
+                        <div class="d-flex justify-content-between align-items-center ">
                             @if (!_isBusy)
                             {
                                 <button type="button" class="btn btn-sn btn-danger" @onclick="() => _category = new()">Отмена</button>
@@ -44,7 +45,7 @@
                 </div>
             </EditForm>
         </div>
-        <div class="col-sm-6 ms-auto">
+        <div class="col-sm-8 ms-auto">
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
