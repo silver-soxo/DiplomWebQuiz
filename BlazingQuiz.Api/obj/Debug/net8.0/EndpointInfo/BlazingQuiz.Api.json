@@ -79,6 +79,39 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/quizes/{quizId}/questions": {
+      "get": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     }
   },
