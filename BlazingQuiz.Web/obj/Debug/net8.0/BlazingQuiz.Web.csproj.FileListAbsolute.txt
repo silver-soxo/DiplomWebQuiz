@@ -4650,10 +4650,10 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\g5kob0xh
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\94pp81wawt-6f4f7914f7.gz
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\65bcn76m3r-dgop47rzvp.gz
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\q17o23y4ai-u60rnckrur.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\xj8qpstz1j-auixpkcift.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\cz4f9xku45-2p31dqqu79.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\x1vu3s9it7-4ahn3xd9vy.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\g5kob0xhiu-o9eh1faado.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\94pp81wawt-0jhlr7w3d4.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\65bcn76m3r-tprjtfkzho.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\q17o23y4ai-y0218t95tg.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\cz4f9xku45-p199f4f4f1.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\g5kob0xhiu-k6gn5ec7z7.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\xj8qpstz1j-gpteeb454j.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\x1vu3s9it7-3rqx50htgt.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\94pp81wawt-it1pt4l28e.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\65bcn76m3r-mxb7butx8j.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\q17o23y4ai-xkxseiayxp.gz

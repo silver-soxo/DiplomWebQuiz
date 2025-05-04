@@ -1,5 +1,7 @@
 ﻿@page "/admin/manage-quizes"
 
+@using BlazingQuiz.Shared.Components.Components
+
 @inject IQuizApi QuizApi
 @inject ICategoryApi CategoryApi
 
@@ -49,8 +51,8 @@
 							<td>@q.TimeInMinutes минут</td>
 							<td>
 								<div class="d-flex justify-content-around">
-									<button type="button" class="btn btn-sm btn-info">Просмотреть вопросы</button>
-											<button type="button" class="btn btn-sm btn-primary">Редактировать</button>
+									<button type="button" class="btn btn-sm btn-info" @onclick="() => ViewQuestionsAsync(q)">Просмотреть вопросы</button>
+									<button type="button" class="btn btn-sm btn-primary">Редактировать</button>
 								</div>
 							</td>
 
@@ -62,11 +64,28 @@
 	</div>
 </div>
 
+@if (_showQuestionsModal)
+{
+	<Modal Title="Вопросы" ActionButtonText="Ok" Size="ModalSize.Large"
+	OnActionButtonClick="() => _showQuestionsModal = false"
+	OnCancelClick="() => _showQuestionsModal = false">
+		@foreach (var q in _viewingQuestions)
+	{
+		<div class="mb-3 shadow p-2 ">
+			@q.Text
+		</div>
+	}
+	</Modal>
+}
+
 @code {
 	private QuizListDto[] _quizzes = [];
 	private QuizListDto[] _filterdQuizes = [];
 	private CategoryDto[] _categories = [];
 	private int _selectedCategory;
+
+	private QuestionDto[] _viewingQuestions = [];
+	private bool _showQuestionsModal;
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -86,5 +105,12 @@
 		{
 			_filterdQuizes = _quizzes.Where(q => q.CategoryId == _selectedCategory).ToArray();
 		}
+	}
+
+	private async Task ViewQuestionsAsync(QuizListDto q)
+	{
+		//Получаем вопросы из api
+		_viewingQuestions = await QuizApi.GetQuizQuestionsAsync(q.Id);
+		_showQuestionsModal = true;
 	}
 }
