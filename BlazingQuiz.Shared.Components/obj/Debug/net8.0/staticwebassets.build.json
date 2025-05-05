@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CPOShVmXT2UaeTsv+ev/OAIMHmL/pvt8c0g1VRcvdIE=",
+  "Hash": "gcu5mvLjsG3FG/k8Wo/ZjCIPWZAYpXHQeNfKtqstX10=",
   "Source": "BlazingQuiz.Shared.Components",
   "BasePath": "_content/BlazingQuiz.Shared.Components",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazingQuiz.Shared.Components\\wwwroot",
       "Source": "BlazingQuiz.Shared.Components",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\",
+      "ContentRoot": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\",
       "BasePath": "_content/BlazingQuiz.Shared.Components",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css",
+      "Identity": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css",
       "SourceId": "BlazingQuiz.Shared.Components",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BlazingQuiz.Shared.Components",
       "RelativePath": "BlazingQuiz.Shared.Components#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css"
+      "OriginalItemSpec": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css"
     },
     {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
+      "Identity": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
       "SourceId": "BlazingQuiz.Shared.Components",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazingQuiz.Shared.Components",
       "RelativePath": "BlazingQuiz.Shared.Components#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\background.png",
+      "Identity": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\background.png",
       "SourceId": "BlazingQuiz.Shared.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\",
+      "ContentRoot": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\",
       "BasePath": "_content/BlazingQuiz.Shared.Components",
       "RelativePath": "background#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\exampleJsInterop.js",
+      "Identity": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\exampleJsInterop.js",
       "SourceId": "BlazingQuiz.Shared.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\",
+      "ContentRoot": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\",
       "BasePath": "_content/BlazingQuiz.Shared.Components",
       "RelativePath": "exampleJsInterop#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -104,7 +104,7 @@
   "Endpoints": [
     {
       "Route": "background.png",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\background.png",
+      "AssetFile": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\background.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -125,7 +125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Sun, 04 May 2025 20:17:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -141,7 +141,7 @@
     },
     {
       "Route": "background.x2rx4ajns0.png",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\background.png",
+      "AssetFile": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\background.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -162,7 +162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Sun, 04 May 2025 20:17:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -186,7 +186,7 @@
     },
     {
       "Route": "BlazingQuiz.Shared.Components.bundle.scp.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
+      "AssetFile": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -207,7 +207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 03:35:05 GMT"
+          "Value": "Sun, 04 May 2025 20:17:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -223,7 +223,7 @@
     },
     {
       "Route": "BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
+      "AssetFile": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -244,7 +244,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 03:35:05 GMT"
+          "Value": "Sun, 04 May 2025 20:17:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -268,7 +268,7 @@
     },
     {
       "Route": "BlazingQuiz.Shared.Components.jlgubt13sv.styles.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css",
+      "AssetFile": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -289,7 +289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 03:35:05 GMT"
+          "Value": "Sun, 04 May 2025 20:17:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -313,7 +313,7 @@
     },
     {
       "Route": "BlazingQuiz.Shared.Components.styles.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css",
+      "AssetFile": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -334,7 +334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 03:35:05 GMT"
+          "Value": "Sun, 04 May 2025 20:17:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -350,7 +350,7 @@
     },
     {
       "Route": "exampleJsInterop.6pqz8bsss0.js",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\exampleJsInterop.js",
+      "AssetFile": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\exampleJsInterop.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -371,7 +371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Sun, 04 May 2025 20:17:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -395,7 +395,7 @@
     },
     {
       "Route": "exampleJsInterop.js",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\exampleJsInterop.js",
+      "AssetFile": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\exampleJsInterop.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -416,7 +416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Sun, 04 May 2025 20:17:42 GMT"
         },
         {
           "Name": "Cache-Control",

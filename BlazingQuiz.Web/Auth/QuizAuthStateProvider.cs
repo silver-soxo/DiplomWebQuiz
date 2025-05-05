@@ -1,6 +1,8 @@
 ﻿using BlazingQuiz.Shared;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.JSInterop;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
@@ -15,11 +17,13 @@ namespace BlazingQuiz.Web.Auth
 
         private Task<AuthenticationState> _authStateTask;
         private readonly IJSRuntime _jsRuntime;
+        private readonly NavigationManager _navigationManager;
 
         // Служба хранения данных о сессии
-        public QuizAuthStateProvider(IJSRuntime jSRuntime)
+        public QuizAuthStateProvider(IJSRuntime jSRuntime, NavigationManager navigationManager)
         {
             _jsRuntime = jSRuntime;
+            _navigationManager = navigationManager;
             SetAuthStateTask();
         }
         public override Task<AuthenticationState> GetAuthenticationStateAsync() => 
@@ -63,6 +67,7 @@ namespace BlazingQuiz.Web.Auth
                 if (string.IsNullOrWhiteSpace(udata))
                 {
                     // Пользовательских данных нет в хранилище браузера
+                    RedirectToLogin();
                     return;
                 }
 
@@ -70,6 +75,14 @@ namespace BlazingQuiz.Web.Auth
                 if (user == null || user.Id == 0)
                 {
                     // Состояние пользовательских данных не соответствуед действительности
+                    RedirectToLogin();
+                    return;
+                }
+
+                // Проверка JWT токена
+                if (!IsTokenValid(user.Token))
+                {
+                    RedirectToLogin();
                     return;
                 }
 
@@ -79,6 +92,33 @@ namespace BlazingQuiz.Web.Auth
             {
                 IsInitializing = false;
             }
+        }
+
+        private void RedirectToLogin() 
+        {
+            _navigationManager.NavigateTo("auth/login");
+        }
+
+        // Проверка действительности токена
+        private static bool IsTokenValid(string token)
+        {
+            if (string.IsNullOrWhiteSpace(token))
+                return false;
+
+            var jwtHandler = new JwtSecurityTokenHandler();
+            if (!jwtHandler.CanReadToken(token)) // Формат токена не действителен
+                return false;
+
+            var jwt = jwtHandler.ReadJwtToken(token);
+            var expClaim = jwt.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Exp);
+            if (expClaim == null)
+                return false;
+
+            var expTime = long.Parse(expClaim.Value);
+
+            var expDatetimeUtc = DateTimeOffset.FromUnixTimeSeconds(expTime).UtcDateTime;
+
+            return expDatetimeUtc < DateTime.UtcNow;
         }
 
         private void SetAuthStateTask()

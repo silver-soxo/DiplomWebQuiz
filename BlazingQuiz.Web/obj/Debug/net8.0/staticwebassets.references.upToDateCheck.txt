@@ -125,3 +125,9 @@ C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Compone
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
