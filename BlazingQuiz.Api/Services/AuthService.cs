@@ -4,6 +4,7 @@ using BlazingQuiz.Shared;
 using BlazingQuiz.Shared.DTOs;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.Json;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -29,11 +30,16 @@ namespace BlazingQuiz.Api.Services
                 .AsNoTracking()
                 .FirstOrDefaultAsync(u => u.Email == dto.Username);
 
+
             if (user == null)
             {
                 // Неверное имя пользователя
                 return new AuthResponseDto(default, "Неверный логин");
             }
+
+            if (!user.IsApproved)
+                return new AuthResponseDto(default, "Ваша учетная запись пока не одобрена");
+
             var passwordResult = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, dto.Password);
             if (passwordResult == PasswordVerificationResult.Failed)
             {
@@ -45,6 +51,34 @@ namespace BlazingQuiz.Api.Services
             var jwt = GenerateJwtToken(user);
             var loggedInUser = new LoggedInUser(user.Id, user.Name, user.Role, jwt);
             return new AuthResponseDto(loggedInUser);
+        }
+
+        public async Task<QuizApiResponse> RegisterAsync(RegisterDto dto)
+        {
+            if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
+            {
+                return QuizApiResponse.Fail("Пользователь с такой почтой уже существует");
+            }
+
+            var user = new User
+            {
+                Email = dto.Email,
+                Name = dto.Name,
+                Phone = dto.Phone,
+                Role = nameof(UserRole.Student),
+                IsApproved = false
+            };
+            user.PasswordHash = _passwordHasher.HashPassword(user, dto.Password);
+            _context.Users.Add(user);
+            try
+            {
+                await _context.SaveChangesAsync();
+                return QuizApiResponse.Success();
+            }
+            catch (Exception ex) 
+            {
+                return QuizApiResponse.Fail(ex.Message);
+            }
         }
 
         private string GenerateJwtToken(User user)

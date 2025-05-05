@@ -27,6 +27,28 @@
         }
       }
     },
+    "/api/auth/register": {
+      "post": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/categories": {
       "get": {
         "tags": [
@@ -265,6 +287,38 @@
               "$ref": "#/components/schemas/QuestionDto"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterDto": {
+        "required": [
+          "email",
+          "name",
+          "password",
+          "phone"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "phone": {
+            "maxLength": 15,
+            "minLength": 10,
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 250,
+            "minLength": 1,
+            "type": "string"
           }
         },
         "additionalProperties": false

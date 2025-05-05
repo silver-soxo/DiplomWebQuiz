@@ -131,3 +131,6 @@ C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticweb
 C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
 C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
 C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
