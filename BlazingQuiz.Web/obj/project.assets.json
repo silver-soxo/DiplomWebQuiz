@@ -133,6 +133,28 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Components.QuickGrid/8.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.8"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Components.Web/8.0.15": {
         "type": "package",
         "dependencies": {
@@ -2078,6 +2100,28 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Components.QuickGrid/8.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.8"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.AspNetCore.Components.QuickGrid.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Components.Web/8.0.15": {
         "type": "package",
         "dependencies": {
@@ -3964,6 +4008,27 @@
         "lib/net8.0/Microsoft.AspNetCore.Components.Forms.xml",
         "microsoft.aspnetcore.components.forms.8.0.15.nupkg.sha512",
         "microsoft.aspnetcore.components.forms.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.QuickGrid/8.0.8": {
+      "sha512": "3o5o08WyBFe8DMutUrl1k9KtJy2bw4/19ZTWR5DKNN4Y1AdpayhjIpQrxVkOyLnLuFO02b6OxAMXrJ0fDeCBQQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.quickgrid/8.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "buildTransitive/Microsoft.AspNetCore.Components.QuickGrid.props",
+        "lib/net8.0/Microsoft.AspNetCore.Components.QuickGrid.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Components.QuickGrid.xml",
+        "microsoft.aspnetcore.components.quickgrid.8.0.8.nupkg.sha512",
+        "microsoft.aspnetcore.components.quickgrid.nuspec",
+        "staticwebassets/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+        "staticwebassets/QuickGrid.razor.js"
       ]
     },
     "Microsoft.AspNetCore.Components.Web/8.0.15": {
@@ -7256,6 +7321,7 @@
       "BlazingQuiz.Shared >= 1.0.0",
       "BlazingQuiz.Shared.Components >= 1.0.0",
       "Microsoft.AspNetCore.Components.Authorization >= 8.0.8",
+      "Microsoft.AspNetCore.Components.QuickGrid >= 8.0.8",
       "Microsoft.AspNetCore.Components.WebAssembly >= 8.0.15",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
@@ -7266,23 +7332,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {},
+    "C:\\Users\\allah\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\BlazingQuiz.Web.csproj",
+      "projectUniqueName": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Web\\BlazingQuiz.Web.csproj",
       "projectName": "BlazingQuiz.Web",
-      "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\BlazingQuiz.Web.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\",
+      "projectPath": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Web\\BlazingQuiz.Web.csproj",
+      "packagesPath": "C:\\Users\\allah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\allah\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7298,11 +7364,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
+            "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
+              "projectPath": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
             },
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
+            "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
+              "projectPath": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
             }
           }
         }
@@ -7324,6 +7390,10 @@
         "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Authorization": {
+            "target": "Package",
+            "version": "[8.0.8, )"
+          },
+          "Microsoft.AspNetCore.Components.QuickGrid": {
             "target": "Package",
             "version": "[8.0.8, )"
           },

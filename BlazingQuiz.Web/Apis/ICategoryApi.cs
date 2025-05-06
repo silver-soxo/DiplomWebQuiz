@@ -1,5 +1,6 @@
 ﻿using BlazingQuiz.Shared.DTOs;
 using Refit;
+using System.Runtime;
 
 namespace BlazingQuiz.Web.Apis
 {

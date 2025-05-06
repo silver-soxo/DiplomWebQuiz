@@ -14,6 +14,5 @@ namespace BlazingQuiz.Api.Endpoints
                 Results.Ok(await authService.RegisterAsync(dto)));
             return app;
         }
-
     }
 }
