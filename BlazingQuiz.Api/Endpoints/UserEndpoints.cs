@@ -10,8 +10,11 @@ namespace BlazingQuiz.Api.Endpoints
             var group = app.MapGroup("/api/users")
                         .RequireAuthorization(p => p.RequireRole(nameof(UserRole.Admin)));
 
-            group.MapGet("", async (UserApprovedFilter filter, int StartIndex, int pageSize, UserService service) =>
-                Results.Ok(await service.GetUsersAsync(filter, StartIndex, pageSize)));
+            group.MapGet("", async(UserApprovedFilter approvedType, int StartIndex, int pageSize, UserService service) =>
+            {
+                //var approvedFilter = Enum.Parse<UserApprovedFilter>(filter);
+                return Results.Ok(await service.GetUsersAsync(approvedType, StartIndex, pageSize));
+            });
 
             group.MapPatch("{userId:int}/toggle-status", async (int userId, UserService service) =>
             {

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "ffIt6WEZxAGeRUc3wRqeQhqo576seE4ZQxJ9B5nUe8c=",
+  "Hash": "xvkNmP5D5C9Kwm1VrpneFZAUcPSCCDBbFVEiQ4Qd8rY=",
   "Source": "BlazingQuiz.Mobile",
   "BasePath": "/",
   "Mode": "Root",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj",
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj",
       "Version": 2,
       "Source": "BlazingQuiz.Shared.Components",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,7 +22,7 @@
     {
       "Name": "BlazingQuiz.Mobile\\wwwroot",
       "Source": "BlazingQuiz.Mobile",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
+      "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     },
@@ -35,153 +35,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css",
-      "SourceId": "BlazingQuiz.Mobile",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\",
-      "BasePath": "/",
-      "RelativePath": "BlazingQuiz.Mobile#[.{fingerprint}]?.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "fsfvy1jyv1",
-      "Integrity": "UeiRpFXqlkmyBPofJHrg5GE3cOGS7u18jbBofWl+K0Y=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\BlazingQuiz.Mobile.bundle.scp.css",
-      "SourceId": "BlazingQuiz.Mobile",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\",
-      "BasePath": "/",
-      "RelativePath": "BlazingQuiz.Mobile#[.{fingerprint}]!.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "fdyqsk1qdq",
-      "Integrity": "gyyMTh4/1X9BkVRN1lDOpuJy61QIsKHrwZeoxlKL9po=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\BlazingQuiz.Mobile.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\app.css",
-      "SourceId": "BlazingQuiz.Mobile",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/app#[.{fingerprint}]?.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "dex3usdpik",
-      "Integrity": "K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\app.css"
-    },
-    {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
-      "SourceId": "BlazingQuiz.Mobile",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "6gzpyzhau4",
-      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
-      "SourceId": "BlazingQuiz.Mobile",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "8inm30yfxf",
-      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\favicon.png",
-      "SourceId": "BlazingQuiz.Mobile",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "favicon#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ifv42okdf2",
-      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.png"
-    },
-    {
-      "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\index.html",
-      "SourceId": "BlazingQuiz.Mobile",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "index#[.{fingerprint}]?.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "trps030401",
-      "Integrity": "h6KOAI0X6Ir01VRJrtnOJ3XeHIwZRbtZrFt1oRsGqHk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\index.html"
-    },
     {
       "Identity": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
       "SourceId": "BlazingQuiz.Shared.Components",
@@ -244,6 +97,153 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\wwwroot\\exampleJsInterop.js"
+    },
+    {
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css",
+      "SourceId": "BlazingQuiz.Mobile",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\",
+      "BasePath": "/",
+      "RelativePath": "BlazingQuiz.Mobile#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "fsfvy1jyv1",
+      "Integrity": "UeiRpFXqlkmyBPofJHrg5GE3cOGS7u18jbBofWl+K0Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css"
+    },
+    {
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\BlazingQuiz.Mobile.bundle.scp.css",
+      "SourceId": "BlazingQuiz.Mobile",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\",
+      "BasePath": "/",
+      "RelativePath": "BlazingQuiz.Mobile#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "fdyqsk1qdq",
+      "Integrity": "gyyMTh4/1X9BkVRN1lDOpuJy61QIsKHrwZeoxlKL9po=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\BlazingQuiz.Mobile.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\app.css",
+      "SourceId": "BlazingQuiz.Mobile",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dex3usdpik",
+      "Integrity": "K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "BlazingQuiz.Mobile",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "BlazingQuiz.Mobile",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\favicon.png",
+      "SourceId": "BlazingQuiz.Mobile",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ifv42okdf2",
+      "Integrity": "4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\index.html",
+      "SourceId": "BlazingQuiz.Mobile",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "trps030401",
+      "Integrity": "h6KOAI0X6Ir01VRJrtnOJ3XeHIwZRbtZrFt1oRsGqHk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
     }
   ],
   "Endpoints": [
@@ -495,7 +495,7 @@
     },
     {
       "Route": "BlazingQuiz.Mobile.bundle.scp.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\BlazingQuiz.Mobile.bundle.scp.css",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\BlazingQuiz.Mobile.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -516,7 +516,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:13:28 GMT"
+          "Value": "Sun, 04 May 2025 10:29:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -532,7 +532,7 @@
     },
     {
       "Route": "BlazingQuiz.Mobile.fdyqsk1qdq.bundle.scp.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\BlazingQuiz.Mobile.bundle.scp.css",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\BlazingQuiz.Mobile.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -553,7 +553,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:13:28 GMT"
+          "Value": "Sun, 04 May 2025 10:29:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -577,7 +577,7 @@
     },
     {
       "Route": "BlazingQuiz.Mobile.fsfvy1jyv1.styles.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -602,7 +602,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:13:28 GMT"
+          "Value": "Sun, 04 May 2025 17:04:41 GMT"
         },
         {
           "Name": "Link",
@@ -626,7 +626,7 @@
     },
     {
       "Route": "BlazingQuiz.Mobile.styles.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -651,7 +651,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:13:28 GMT"
+          "Value": "Sun, 04 May 2025 17:04:41 GMT"
         },
         {
           "Name": "Link",
@@ -667,7 +667,7 @@
     },
     {
       "Route": "css/app.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\app.css",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -688,7 +688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -704,7 +704,7 @@
     },
     {
       "Route": "css/app.dex3usdpik.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\app.css",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -725,7 +725,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -749,7 +749,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -770,7 +770,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -794,7 +794,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -815,7 +815,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -831,7 +831,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -852,7 +852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -876,7 +876,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -897,7 +897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -913,7 +913,7 @@
     },
     {
       "Route": "favicon.ifv42okdf2.png",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\favicon.png",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -934,7 +934,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -958,7 +958,7 @@
     },
     {
       "Route": "favicon.png",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\favicon.png",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\favicon.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -979,7 +979,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -995,7 +995,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\index.html",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1016,7 +1016,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1032,7 +1032,7 @@
     },
     {
       "Route": "index.trps030401.html",
-      "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\index.html",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1053,7 +1053,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 01 May 2025 19:14:13 GMT"
+          "Value": "Thu, 01 May 2025 11:41:46 GMT"
         },
         {
           "Name": "Cache-Control",

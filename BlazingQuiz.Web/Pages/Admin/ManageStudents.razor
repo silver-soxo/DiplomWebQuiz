@@ -1,29 +1,60 @@
 ﻿@page "/admin/manage-students"
 
-
 @inject IUserApi UserApi
 
-<QuickGrid ItemsProvider="_usersProvider">
-	<PropertyColumn Property="u => u.Id" />
-	<PropertyColumn Property="u => u.Name" />
-	<PropertyColumn Property="u => u.Email" />
-	<PropertyColumn Property="u => u.Phone" />
+<SectionContent SectionName="pageTitle">Управление студентами</SectionContent>
 
-	<TemplateColumn Title="Подтверждён?">
-		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" role="switch" id="u_@context.Id" />
-			<label class="form-check-label" for="u_@context.Id">
-				@(context.IsApproved ? "Да" : "Нет")
-			</label>
-		</div>
-	</TemplateColumn>
-</QuickGrid>
+<div class="row">
+	<div class="col-sm-4 ms-auto mb-3">
+		<label class="form-label">Фильтр по утвержденному статусу</label>
+		<select class="form-control" @bind="_filter" @bind:after="OnFilterChangedAsync">
+			@foreach (var f in Enum.GetValues<UserApprovedFilter>())
+			{
+				if (f == UserApprovedFilter.All)
+				{
+					<option value="@f">Все</option>
+				}
+				else if (f == UserApprovedFilter.ApprovedOnly)
+				{
+					<option value="@f">Подтвержденные пользователи</option>
+				}
+				else
+				{
+					<option value="@f">Неподтвержденные пользователи</option>
+				}
+			}
+		</select>
+	</div>
+</div>
+<div class="row">
+	<QuickGrid ItemsProvider="_usersProvider" @ref="_grid" Pagination="_paginationState" Class="table table-striped table-hover">
+		<PropertyColumn Property="u => u.Id" Title="Номер"/>
+		<PropertyColumn Property="u => u.Name" Title="Имя" />
+		<PropertyColumn Property="u => u.Email" Title="Почта" />
+		<PropertyColumn Property="u => u.Phone" Title="Телефон" />
+
+		<TemplateColumn Title="Подтверждён?">
+			<div class="form-check form-switch">
+				<input class="form-check-input" type="checkbox" checked="@(context.IsApproved)" role="switch" id="u_@context.Id" @onchange="() => OnUserApprovedToggleAsync(context)" />
+				<label class="form-check-label" for="u_@context.Id">
+					@(context.IsApproved ? "Да" : "Нет")
+				</label>
+			</div>
+		</TemplateColumn>
+	</QuickGrid>
+	@* <Paginator State="_paginationState" /> *@
+</div>
 
 @code {
-	private const int DefaultPageSize = 10;
+	private const int DefaultPageSize = 1000;
+
+	private QuickGrid<UserDto> _grid;
+
 	private GridItemsProvider<UserDto> _usersProvider;
 
 	private UserApprovedFilter _filter = UserApprovedFilter.All;
+
+	private PaginationState _paginationState = new PaginationState { ItemsPerPage = DefaultPageSize };
 
 	protected override void OnInitialized()
 	{
@@ -32,5 +63,22 @@
 			var pagedResult = await UserApi.GetUsersAsync(_filter, request.StartIndex, request.Count ?? DefaultPageSize);
 			return GridItemsProviderResult.From(pagedResult.Records, pagedResult.TotalCount);
 		};
+	}
+
+	private async Task OnUserApprovedToggleAsync(UserDto user)
+	{
+		user.IsApproved = !user.IsApproved;
+		_shouldReRender = false;
+		await UserApi.ToggleUserApprovedStatusAsync(user.Id);
+		_shouldReRender = true;
+	}
+
+	private bool _shouldReRender = true;
+	protected override bool ShouldRender() => _shouldReRender;
+
+	private async Task OnFilterChangedAsync()
+	{
+		if (_grid != null)
+			await _grid.RefreshDataAsync();
 	}
 }

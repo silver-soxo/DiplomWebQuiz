@@ -15,9 +15,9 @@ namespace BlazingQuiz.Api.Services
             _context = context;
         }
 
-        public async Task<PagedResult<UserDto>> GetUsersAsync(UserApprovedFilter approvedType, int startIndex, int pageSize) 
+        public async Task<PagedResult<UserDto>> GetUsersAsync(UserApprovedFilter approvedType, int StartIndex, int pageSize) 
         {
-            var query = _context.Users.AsQueryable();
+            var query = _context.Users.Where(u => u.Role != nameof(UserRole.Admin)).AsQueryable();
 
             if (approvedType != UserApprovedFilter.All) 
             {
@@ -26,9 +26,10 @@ namespace BlazingQuiz.Api.Services
                 else
                     query = query.Where(u => !u.IsApproved);
             }
+
             var total = await query.CountAsync();
             var users = await query.OrderByDescending(u=> u.Id)
-                    .Skip(startIndex)
+                    .Skip(StartIndex)
                     .Take(pageSize)
                     .Select(u => new UserDto(u.Id, u.Name, u.Email, u.Phone, u.IsApproved))
                     .ToArrayAsync();
@@ -39,7 +40,7 @@ namespace BlazingQuiz.Api.Services
         public async Task ToggleUserApprovedStatusAsync(int userId) 
         {
             var dbUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
-            if (dbUser == null) 
+            if (dbUser != null) 
             {
                 dbUser.IsApproved = !dbUser.IsApproved;
                 await _context.SaveChangesAsync();

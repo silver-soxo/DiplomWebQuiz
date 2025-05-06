@@ -166,7 +166,7 @@
         ],
         "parameters": [
           {
-            "name": "filter",
+            "name": "approvedType",
             "in": "query",
             "required": true,
             "schema": {
@@ -174,7 +174,7 @@
             }
           },
           {
-            "name": "pageNumber",
+            "name": "StartIndex",
             "in": "query",
             "required": true,
             "schema": {

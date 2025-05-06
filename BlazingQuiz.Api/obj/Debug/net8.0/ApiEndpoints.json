@@ -172,12 +172,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "filter",
+        "Name": "approvedType",
         "Type": "BlazingQuiz.Shared.UserApprovedFilter",
         "IsRequired": true
       },
       {
-        "Name": "pageNumber",
+        "Name": "StartIndex",
         "Type": "System.Int32",
         "IsRequired": true
       },
