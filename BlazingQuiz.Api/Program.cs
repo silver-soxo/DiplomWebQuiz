@@ -59,10 +59,12 @@ builder.Services.AddCors(options =>
     });
 });
 
+// Подключение сервисов
 builder.Services.AddTransient<AuthService>()
     .AddTransient<CategoryService>()
     .AddTransient<QuizService>()
-    .AddTransient<UserService>();
+    .AddTransient<UserService>()
+    .AddTransient<StudentQuizService>();
 
 var app = builder.Build();
 
@@ -83,10 +85,12 @@ app.UseCors();
 app.UseAuthentication()
     .UseAuthorization();
 
+// Подключение конечных точек
 app.MapAuthEndpoints()
     .MapCategoryEndpoints()
     .MapQuizEndpoints()
-    .MapUserEndpoints();
+    .MapUserEndpoints()
+    .MapStudentQuizEndpoints();
 
 app.Run();
 

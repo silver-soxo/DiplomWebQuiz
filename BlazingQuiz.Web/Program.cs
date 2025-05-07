@@ -21,7 +21,8 @@ sp.GetRequiredService<QuizAuthStateProvider>());
 
 builder.Services.AddAuthorizationCore();
 
-builder.Services.AddSingleton<IAppState, AppState>();
+builder.Services.AddSingleton<IAppState, AppState>()
+    .AddSingleton<QuizState>();
 
 //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
@@ -41,9 +42,12 @@ static void ConfigureRefit(IServiceCollection services)
 
     services.AddRefitClient<IQuizApi>(GetRefitSettings)
         .ConfigureHttpClient(SetHttpClient);
+
     services.AddRefitClient<IUserApi>(GetRefitSettings)
         .ConfigureHttpClient(SetHttpClient);
 
+    services.AddRefitClient<IStudentQuizApi>(GetRefitSettings)
+        .ConfigureHttpClient(SetHttpClient);
     static void SetHttpClient(HttpClient httpClient) => 
         httpClient.BaseAddress = new Uri(ApiBaseUrl);
 

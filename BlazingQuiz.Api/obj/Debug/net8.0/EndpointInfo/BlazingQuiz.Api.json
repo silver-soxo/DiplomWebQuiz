@@ -221,6 +221,29 @@
           }
         }
       }
+    },
+    "/api/student/avaliable-quizes": {
+      "get": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "categoryId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

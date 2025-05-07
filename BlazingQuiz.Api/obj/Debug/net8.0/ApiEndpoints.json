@@ -164,6 +164,28 @@
     ]
   },
   {
+    "ContainingType": "BlazingQuiz.Api.Endpoints.StudentQuizEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__0_1",
+    "RelativePath": "api/student/avaliable-quizes",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BlazingQuiz.Api.Endpoints.UserEndpoints\u002B\u003C\u003Ec",
     "Method": "\u003CMapUserEndpoints\u003Eb__0_1",
     "RelativePath": "api/users/",

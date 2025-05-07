@@ -64,8 +64,9 @@
     {
         if (QuizAuthStateProvider.IsLoggedIn)
         {
-            NavigationManager.NavigateTo("/", replace: true);
-            return;
+            //NavigationManager.NavigateTo("/", replace: true);
+            RedirectToHome(replace: true);
+            //return;
         }
 
     }
@@ -90,7 +91,7 @@
             // Уставновка состояния входа в систему
             await QuizAuthStateProvider.SetLoginAsync(loggedInUser);
 
-            NavigationManager.NavigateTo("/");
+            RedirectToHome();
 
         }
         catch (Exception ex)
@@ -103,5 +104,16 @@
             _isBusy = false;
             AppState.HideLoader();
         }
+    }
+
+    private  void RedirectToHome(bool replace = false)
+    {
+        var redirectTo = QuizAuthStateProvider.User.Role switch
+        {
+            nameof(UserRole.Student) => "student/home",
+            _ => "/"
+        };
+
+        NavigationManager.NavigateTo(redirectTo, replace);
     }
 }

@@ -4666,6 +4666,6 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\xj8qpstz
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\x1vu3s9it7-826nw3grhe.gz
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\cz4f9xku45-lojecddzir.gz
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\g5kob0xhiu-780v0h0d0d.gz
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\94pp81wawt-m2p9ta7pz5.gz
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\65bcn76m3r-sr21z3nk7d.gz
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\q17o23y4ai-1p6e67bfev.gz
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\94pp81wawt-j1mtojfm9a.gz
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\65bcn76m3r-wi679tvngb.gz
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\q17o23y4ai-ef1mqnjrnn.gz

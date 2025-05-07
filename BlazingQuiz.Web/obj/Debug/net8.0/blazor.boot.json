@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazingQuiz.Web",
   "resources": {
-    "hash": "sha256-94zi9hP7dkGsmM54zcD4LuV4wUhw8cvEmcbPgoIQh0Y=",
+    "hash": "sha256-Amz0jY0L5xOePeDu5bJDPJwswk4LMF/Uk2WlyM6N0wA=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -261,12 +261,12 @@
       "System.Private.CoreLib.wasm": "sha256-VIQEPUSb48N39LR+ncGDP5xU02xuRbyZU8MhMho26wQ=",
       "BlazingQuiz.Shared.Components.wasm": "sha256-uUPO1TJGYK/mtu0rw/Dm7XSziOwobFp7dBdOfLSecZk=",
       "BlazingQuiz.Shared.wasm": "sha256-Jcus1+XhEiUxQMwHy0hvYSsUx5XvYqcvr8DCkCQ2uSs=",
-      "BlazingQuiz.Web.wasm": "sha256-LjytFjfMSzoQd9xy5fGIFlvz5cIKK6q6Gw1fRjO7f74="
+      "BlazingQuiz.Web.wasm": "sha256-KTddO9jWEWaFqSBpwkELYCMZyaqgC2q8IUWxVZnCBJs="
     },
     "pdb": {
       "BlazingQuiz.Shared.Components.pdb": "sha256-cEqfA9diWbZRpN/EjQLvgnKQIFpp/sBAWsqQ/6xBzuo=",
       "BlazingQuiz.Shared.pdb": "sha256-GcnX/kQPgm7RN1lBJ//n+JClW2NuWyY2u89Z1HuQTiU=",
-      "BlazingQuiz.Web.pdb": "sha256-SCMUOEYxxjEBwO09S7/qb5perEStctBCsH9MvCmyfc0="
+      "BlazingQuiz.Web.pdb": "sha256-OPa4Q1GMAG2L+oqM7PPy03zPNFHfjtixZOeaNab9pLI="
     },
     "satelliteResources": {
       "cs": {

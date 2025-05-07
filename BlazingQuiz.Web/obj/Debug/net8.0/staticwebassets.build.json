@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p5lkDPVvlGkGqbsHP5dkD8Yry7PJXT5tS1dTBFngt9k=",
+  "Hash": "rRq4DwOhpFYwrAUkUuwNLDJoFOG2NVjGJHE0I3vVWp0=",
   "Source": "BlazingQuiz.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -281,8 +281,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "sr21z3nk7d",
-      "Integrity": "SCMUOEYxxjEBwO09S7/qb5perEStctBCsH9MvCmyfc0=",
+      "Fingerprint": "wi679tvngb",
+      "Integrity": "OPa4Q1GMAG2L+oqM7PPy03zPNFHfjtixZOeaNab9pLI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\BlazingQuiz.Web.pdb"
@@ -302,8 +302,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "m2p9ta7pz5",
-      "Integrity": "LjytFjfMSzoQd9xy5fGIFlvz5cIKK6q6Gw1fRjO7f74=",
+      "Fingerprint": "j1mtojfm9a",
+      "Integrity": "KTddO9jWEWaFqSBpwkELYCMZyaqgC2q8IUWxVZnCBJs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\webcil\\BlazingQuiz.Web.wasm"
@@ -323,8 +323,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "1p6e67bfev",
-      "Integrity": "mzTcJb4C78DRSNdX98dMEw2VJJgKxA1NiliyaRpuCUE=",
+      "Fingerprint": "ef1mqnjrnn",
+      "Integrity": "urZAd5ryIvdS0Etdnw/PaCzrBtnuLThXBKxn0GLOmUc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -8016,7 +8016,7 @@
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Configuration.ConfigurationManager.wasm"
     },
     {
-      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\65bcn76m3r-sr21z3nk7d.gz",
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\65bcn76m3r-wi679tvngb.gz",
       "SourceId": "BlazingQuiz.Web",
       "SourceType": "Computed",
       "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\",
@@ -8030,8 +8030,8 @@
       "RelatedAsset": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazingQuiz.Web.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "13duberjfn",
-      "Integrity": "vfCkS7ypeKlMPZ1KrJK//2ynp19uWhrt/sJwye9yp5g=",
+      "Fingerprint": "37th0zomjq",
+      "Integrity": "8eVQRaXiXkD/5aLWcm3lfdVe4lhsP8xszexTRgNGpUU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazingQuiz.Web.pdb"
@@ -8520,7 +8520,7 @@
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.IdentityModel.Tokens.wasm"
     },
     {
-      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\94pp81wawt-m2p9ta7pz5.gz",
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\94pp81wawt-j1mtojfm9a.gz",
       "SourceId": "BlazingQuiz.Web",
       "SourceType": "Computed",
       "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\",
@@ -8534,8 +8534,8 @@
       "RelatedAsset": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazingQuiz.Web.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "h10i72nrhz",
-      "Integrity": "ta8Ns70Fra1sDtjjmgTLWgly6QIB4jod2mpxqqK+iyA=",
+      "Fingerprint": "v1uygn1bcl",
+      "Integrity": "XZfspzbsOXPTg3cKYK+fdgAFEC1zH0le9kAyP44GFdE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazingQuiz.Web.wasm"
@@ -11439,7 +11439,7 @@
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.Http.Json.wasm"
     },
     {
-      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\q17o23y4ai-1p6e67bfev.gz",
+      "Identity": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\q17o23y4ai-ef1mqnjrnn.gz",
       "SourceId": "BlazingQuiz.Web",
       "SourceType": "Computed",
       "ContentRoot": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\",
@@ -11453,8 +11453,8 @@
       "RelatedAsset": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ww256f2m91",
-      "Integrity": "AKCRAIpdavAUUdP2s8/khNk4g/LLOwoJnO0UCO7ys5o=",
+      "Fingerprint": "qqdahpmnn9",
+      "Integrity": "Ejnzn8Ep2gdWH7n8+noXp+cM5maEw7EfEjd/ut+JIdg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -14546,7 +14546,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "79008"
+          "Value": "85468"
         },
         {
           "Name": "Content-Type",
@@ -14554,11 +14554,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SCMUOEYxxjEBwO09S7/qb5perEStctBCsH9MvCmyfc0=\""
+          "Value": "\"OPa4Q1GMAG2L+oqM7PPy03zPNFHfjtixZOeaNab9pLI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 09:11:53 GMT"
+          "Value": "Wed, 07 May 2025 20:15:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14568,18 +14568,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SCMUOEYxxjEBwO09S7/qb5perEStctBCsH9MvCmyfc0="
+          "Value": "sha256-OPa4Q1GMAG2L+oqM7PPy03zPNFHfjtixZOeaNab9pLI="
         }
       ]
     },
     {
       "Route": "_framework/BlazingQuiz.Web.pdb",
-      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\65bcn76m3r-sr21z3nk7d.gz",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\65bcn76m3r-wi679tvngb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000016521006"
+          "Quality": "0.000015228813"
         }
       ],
       "ResponseHeaders": [
@@ -14589,15 +14589,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "60528"
+          "Value": "65664"
         },
         {
           "Name": "ETag",
-          "Value": "\"vfCkS7ypeKlMPZ1KrJK//2ynp19uWhrt/sJwye9yp5g=\""
+          "Value": "\"8eVQRaXiXkD/5aLWcm3lfdVe4lhsP8xszexTRgNGpUU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:47:43 GMT"
+          "Value": "Wed, 07 May 2025 19:56:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14617,19 +14617,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SCMUOEYxxjEBwO09S7/qb5perEStctBCsH9MvCmyfc0=\""
+          "Value": "W/\"OPa4Q1GMAG2L+oqM7PPy03zPNFHfjtixZOeaNab9pLI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SCMUOEYxxjEBwO09S7/qb5perEStctBCsH9MvCmyfc0="
+          "Value": "sha256-OPa4Q1GMAG2L+oqM7PPy03zPNFHfjtixZOeaNab9pLI="
         }
       ]
     },
     {
       "Route": "_framework/BlazingQuiz.Web.pdb.gz",
-      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\65bcn76m3r-sr21z3nk7d.gz",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\65bcn76m3r-wi679tvngb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14638,7 +14638,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "60528"
+          "Value": "65664"
         },
         {
           "Name": "Content-Type",
@@ -14646,11 +14646,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vfCkS7ypeKlMPZ1KrJK//2ynp19uWhrt/sJwye9yp5g=\""
+          "Value": "\"8eVQRaXiXkD/5aLWcm3lfdVe4lhsP8xszexTRgNGpUU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:47:43 GMT"
+          "Value": "Wed, 07 May 2025 19:56:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14668,7 +14668,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vfCkS7ypeKlMPZ1KrJK//2ynp19uWhrt/sJwye9yp5g="
+          "Value": "sha256-8eVQRaXiXkD/5aLWcm3lfdVe4lhsP8xszexTRgNGpUU="
         }
       ]
     },
@@ -14683,7 +14683,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "108309"
+          "Value": "117525"
         },
         {
           "Name": "Content-Type",
@@ -14691,11 +14691,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LjytFjfMSzoQd9xy5fGIFlvz5cIKK6q6Gw1fRjO7f74=\""
+          "Value": "\"KTddO9jWEWaFqSBpwkELYCMZyaqgC2q8IUWxVZnCBJs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 09:11:53 GMT"
+          "Value": "Wed, 07 May 2025 20:15:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14705,18 +14705,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LjytFjfMSzoQd9xy5fGIFlvz5cIKK6q6Gw1fRjO7f74="
+          "Value": "sha256-KTddO9jWEWaFqSBpwkELYCMZyaqgC2q8IUWxVZnCBJs="
         }
       ]
     },
     {
       "Route": "_framework/BlazingQuiz.Web.wasm",
-      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\94pp81wawt-m2p9ta7pz5.gz",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\94pp81wawt-j1mtojfm9a.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000025131311"
+          "Quality": "0.000023455458"
         }
       ],
       "ResponseHeaders": [
@@ -14726,15 +14726,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39790"
+          "Value": "42633"
         },
         {
           "Name": "ETag",
-          "Value": "\"ta8Ns70Fra1sDtjjmgTLWgly6QIB4jod2mpxqqK+iyA=\""
+          "Value": "\"XZfspzbsOXPTg3cKYK+fdgAFEC1zH0le9kAyP44GFdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:47:43 GMT"
+          "Value": "Wed, 07 May 2025 19:56:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14754,19 +14754,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LjytFjfMSzoQd9xy5fGIFlvz5cIKK6q6Gw1fRjO7f74=\""
+          "Value": "W/\"KTddO9jWEWaFqSBpwkELYCMZyaqgC2q8IUWxVZnCBJs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LjytFjfMSzoQd9xy5fGIFlvz5cIKK6q6Gw1fRjO7f74="
+          "Value": "sha256-KTddO9jWEWaFqSBpwkELYCMZyaqgC2q8IUWxVZnCBJs="
         }
       ]
     },
     {
       "Route": "_framework/BlazingQuiz.Web.wasm.gz",
-      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\94pp81wawt-m2p9ta7pz5.gz",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\94pp81wawt-j1mtojfm9a.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14775,7 +14775,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39790"
+          "Value": "42633"
         },
         {
           "Name": "Content-Type",
@@ -14783,11 +14783,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ta8Ns70Fra1sDtjjmgTLWgly6QIB4jod2mpxqqK+iyA=\""
+          "Value": "\"XZfspzbsOXPTg3cKYK+fdgAFEC1zH0le9kAyP44GFdE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:47:43 GMT"
+          "Value": "Wed, 07 May 2025 19:56:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14805,7 +14805,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ta8Ns70Fra1sDtjjmgTLWgly6QIB4jod2mpxqqK+iyA="
+          "Value": "sha256-XZfspzbsOXPTg3cKYK+fdgAFEC1zH0le9kAyP44GFdE="
         }
       ]
     },
@@ -14828,11 +14828,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mzTcJb4C78DRSNdX98dMEw2VJJgKxA1NiliyaRpuCUE=\""
+          "Value": "\"urZAd5ryIvdS0Etdnw/PaCzrBtnuLThXBKxn0GLOmUc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 09:11:54 GMT"
+          "Value": "Wed, 07 May 2025 20:15:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14842,18 +14842,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mzTcJb4C78DRSNdX98dMEw2VJJgKxA1NiliyaRpuCUE="
+          "Value": "sha256-urZAd5ryIvdS0Etdnw/PaCzrBtnuLThXBKxn0GLOmUc="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\q17o23y4ai-1p6e67bfev.gz",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\q17o23y4ai-ef1mqnjrnn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000075999392"
+          "Quality": "0.000075982068"
         }
       ],
       "ResponseHeaders": [
@@ -14863,15 +14863,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13157"
+          "Value": "13160"
         },
         {
           "Name": "ETag",
-          "Value": "\"AKCRAIpdavAUUdP2s8/khNk4g/LLOwoJnO0UCO7ys5o=\""
+          "Value": "\"Ejnzn8Ep2gdWH7n8+noXp+cM5maEw7EfEjd/ut+JIdg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:47:43 GMT"
+          "Value": "Wed, 07 May 2025 19:56:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14891,19 +14891,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"mzTcJb4C78DRSNdX98dMEw2VJJgKxA1NiliyaRpuCUE=\""
+          "Value": "W/\"urZAd5ryIvdS0Etdnw/PaCzrBtnuLThXBKxn0GLOmUc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mzTcJb4C78DRSNdX98dMEw2VJJgKxA1NiliyaRpuCUE="
+          "Value": "sha256-urZAd5ryIvdS0Etdnw/PaCzrBtnuLThXBKxn0GLOmUc="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\q17o23y4ai-1p6e67bfev.gz",
+      "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Web\\obj\\Debug\\net8.0\\compressed\\q17o23y4ai-ef1mqnjrnn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14912,7 +14912,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13157"
+          "Value": "13160"
         },
         {
           "Name": "Content-Type",
@@ -14920,11 +14920,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AKCRAIpdavAUUdP2s8/khNk4g/LLOwoJnO0UCO7ys5o=\""
+          "Value": "\"Ejnzn8Ep2gdWH7n8+noXp+cM5maEw7EfEjd/ut+JIdg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:47:43 GMT"
+          "Value": "Wed, 07 May 2025 19:56:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14942,7 +14942,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-AKCRAIpdavAUUdP2s8/khNk4g/LLOwoJnO0UCO7ys5o="
+          "Value": "sha256-Ejnzn8Ep2gdWH7n8+noXp+cM5maEw7EfEjd/ut+JIdg="
         }
       ]
     },

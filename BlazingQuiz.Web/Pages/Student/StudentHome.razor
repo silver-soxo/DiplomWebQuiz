@@ -1,0 +1,130 @@
+﻿@page "/student/home"
+
+@inject NavigationManager NavigationManager
+
+@inject IAppState AppState
+@inject ICategoryApi CategoryApi
+@inject IStudentQuizApi StudentQuizApi
+@inject QuizState QuizState
+
+<SectionContent SectionName="pageTitle">Главная</SectionContent>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 ms-auto">
+            <label class="form-label">Выберите категорию</label>
+            <select class="form-control" @bind="_selectedCategoryId" @bind:after="OnSelectedCategoryChanged">
+                <option value="0">Выберите категорию</option>
+                @foreach (var c in _categories)
+                {
+                    <option value="@c.Id">@c.Name</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        @if (!_isLoading && _quizes.Length == 0)
+        {
+            var message = _selectedCategoryId == 0
+            ? "Сейчас нет активные тестов"
+            : "В выбранной категории пока нет тестов";
+            <p class="h4 text-danger mt-5 text-center">@message</p>
+        }
+        else
+        {
+            foreach (var q in _quizes)
+            {
+                <div class="col-sm-4 mb-3">
+                    <div class="box bg-white p-3">
+                        <h5 class="fw-bold">@q.Name</h5>
+                        <hr />
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <label class="fw-bold">Категория</label>
+                                </td>
+                                <td>
+                                    <span>@q.CategoryName</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="fw-bold">Кол-во вопросов</label>
+                                </td>
+                                <td>
+                                    <span>@q.TotalQuestions вопрос(ы)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="fw-bold">Общее время</label>
+                                </td>
+                                <td>
+                                    <span>@q.TimeInMinutes минута(ы)</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr />
+                        <button type="button" class="btn btn-sm btn-warning" @onclick="() => _startingQuiz = q">Начать тестирование</button>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@if (_startingQuiz != null)
+{
+    var title = $"Начать тестирование: {_startingQuiz.Name}?";
+
+    <Modal Title="@title" OnCancelClick="() => _startingQuiz = null" OnActionButtonClick="StartQuiz">
+        <p class="m-0 p-3">Хотите начать тестирование?<br />У вас будет всего одна попытка.</p>
+    </Modal>
+}
+
+@code {
+    private CategoryDto[] _categories = [];
+    private QuizListDto[] _quizes = [];
+    private bool _isLoading;
+    private int _selectedCategoryId;
+    private QuizListDto? _startingQuiz;
+
+    protected override async Task OnInitializedAsync()
+    {
+        AppState.ShowLoader("Получение тестов и категорий");
+
+        try
+        {
+            _isLoading = true;
+
+            var categoriesTask = CategoryApi.GetCategoriesAsync();
+
+            _quizes = await StudentQuizApi.GetActiveQuizesAsync(_selectedCategoryId);
+
+            _categories = await categoriesTask;
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+        finally
+        {
+            AppState.HideLoader();
+            _isLoading = false;
+        }
+    }
+
+    private async Task OnSelectedCategoryChanged()
+    {
+        AppState.ShowLoader("Загрузка тестов");
+        _quizes = await StudentQuizApi.GetActiveQuizesAsync(_selectedCategoryId);
+        AppState.HideLoader();
+    }
+
+    private void StartQuiz()
+    {
+        QuizState.SetQuiz(_startingQuiz);
+        NavigationManager.NavigateTo("student/quiz");
+    }
+}
