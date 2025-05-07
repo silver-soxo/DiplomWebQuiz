@@ -4,6 +4,7 @@
 
 @inject IQuizApi QuizApi
 @inject ICategoryApi CategoryApi
+@inject IAppState AppState
 
 <SectionContent SectionName="pageTitle">Управление тестами</SectionContent>
 
@@ -70,11 +71,11 @@
 	OnActionButtonClick="() => _showQuestionsModal = false"
 	OnCancelClick="() => _showQuestionsModal = false">
 		@foreach (var q in _viewingQuestions)
-	{
-		<div class="mb-3 shadow p-2 ">
-			@q.Text
-		</div>
-	}
+		{
+			<div class="mb-3 shadow p-2 ">
+				@q.Text
+			</div>
+		}
 	</Modal>
 }
 
@@ -89,10 +90,22 @@
 
 	protected override async Task OnInitializedAsync()
 	{
-		var quizesTask = QuizApi.GetQuizesAsync();
-		_categories = await CategoryApi.GetCategoriesAsync();
-		_quizzes = await quizesTask;
-		_filterdQuizes = _quizzes;
+		AppState.ShowLoader("Получение тестов и категорий");
+		try
+		{
+			var quizesTask = QuizApi.GetQuizesAsync();
+			_categories = await CategoryApi.GetCategoriesAsync();
+			_quizzes = await quizesTask;
+			_filterdQuizes = _quizzes;
+		}
+		catch(Exception ex)
+		{
+			throw;
+		}
+		finally
+		{
+			AppState.HideLoader();
+		}
 	}
 
 	private void OnSelectedCategoryChanged()
@@ -109,8 +122,10 @@
 
 	private async Task ViewQuestionsAsync(QuizListDto q)
 	{
+		AppState.ShowLoader("Загрузка вопросов");
 		//Получаем вопросы из api
 		_viewingQuestions = await QuizApi.GetQuizQuestionsAsync(q.Id);
+		AppState.HideLoader();
 		_showQuestionsModal = true;
 	}
 }

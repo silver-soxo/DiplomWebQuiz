@@ -5,6 +5,7 @@
 @inject ICategoryApi CategoryApi
 @inject IJSRuntime JsRuntime
 @inject NavigationManager NavigationManager
+@inject IAppState AppState
 
 <SectionContent SectionName="pageTitle">@(IsEditCase ? "Редактирование теста" : "Создание теста")</SectionContent>
 
@@ -130,16 +131,12 @@
 				<button type="submit" class="btn btn-success">Сохранить тест</button>
 			</div>
 		</div>
-		<div class="d-flex mb-5 justify-content-center align-items-center gap-3">
-
-			
-			
-
-			
-		</div>	
+		@* <div class="d-flex mb-5 justify-content-center align-items-center gap-3"> *@
+		@* </div>	 *@
 	</div>
-
 </EditForm>
+
+
 
 @code {
 	[Parameter]
@@ -155,7 +152,9 @@
 		if (IsEditCase)
 		{
 			// Получение списка тестов из API
+			AppState.ShowLoader("Загрузка тестирований");
 			var quiz = await QuizApi.GetQuizToEditAsync(QuizId!.Value);
+			AppState.HideLoader();
 			if (quiz == null)
 			{
 				NavigationManager.NavigateTo("/admin/manage-quizes");
@@ -168,8 +167,9 @@
 			var question = GetDefaultEmptyQuestion();
 			_quiz.Questions = [question];
 		}
-
+		AppState.ShowLoader("Загрузка категорий");
 		_categories = await CategoryApi.GetCategoriesAsync();
+		AppState.HideLoader();
 	}
 
 	protected override void OnParametersSet()
@@ -209,8 +209,9 @@
 			await ShowAlertAsync(errorMessege);
 			return;
 		}
-
+		AppState.ShowLoader("Сохранение тестирования");
 		var response = await QuizApi.SaveQuizAsync(_quiz);
+		AppState.HideLoader();
 		if (!response.IsSuccess)
 		{
 			await ShowAlertAsync(response.ErrorMessage);

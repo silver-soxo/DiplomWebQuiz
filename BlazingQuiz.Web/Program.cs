@@ -1,3 +1,4 @@
+using BlazingQuiz.Shared;
 using BlazingQuiz.Web;
 using BlazingQuiz.Web.Apis;
 using BlazingQuiz.Web.Auth;
@@ -20,6 +21,7 @@ sp.GetRequiredService<QuizAuthStateProvider>());
 
 builder.Services.AddAuthorizationCore();
 
+builder.Services.AddSingleton<IAppState, AppState>();
 
 //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 

@@ -31,3 +31,7 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/DiplomProj/DiplomWebQuiz/BlazingQuiz.Shared.Components/Component1.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50MS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-x3cmbozxfm
+
+[D:/DiplomProj/DiplomWebQuiz/BlazingQuiz.Shared.Components/Components/Loader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2FkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rkhs95wt33

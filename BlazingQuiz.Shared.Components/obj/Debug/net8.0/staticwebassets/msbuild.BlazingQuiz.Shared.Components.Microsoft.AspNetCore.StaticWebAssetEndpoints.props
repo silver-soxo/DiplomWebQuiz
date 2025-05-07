@@ -13,16 +13,16 @@
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"378"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 May 2025 11:41:46 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazingQuiz.Shared.Components.kevbtkaxmn.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx\u002Bnipz0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"222"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx\u002Bnipz0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 10:29:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"495"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 08:30:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.kevbtkaxmn.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazingQuiz.Shared.Components.kevbtkaxmn.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jlgubt13sv"},{"Name":"integrity","Value":"sha256-eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx\u002Bnipz0="},{"Name":"label","Value":"_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"222"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx\u002Bnipz0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 04 May 2025 10:29:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kevbtkaxmn"},{"Name":"integrity","Value":"sha256-RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw="},{"Name":"label","Value":"_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"495"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 07 May 2025 08:30:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlazingQuiz.Shared.Components/exampleJsInterop.6pqz8bsss0.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\exampleJsInterop.js'))</AssetFile>

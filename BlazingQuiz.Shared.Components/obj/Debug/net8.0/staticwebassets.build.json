@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ymIWRhePejlal+iLJ97igMgrqo2Fl7lMQyGa0Qb0K/c=",
+  "Hash": "xML8jei7+891WbEbsuSQQQM3IaMvtyftkp/IXdOYJ4M=",
   "Source": "BlazingQuiz.Shared.Components",
   "BasePath": "_content/BlazingQuiz.Shared.Components",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "jlgubt13sv",
-      "Integrity": "eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=",
+      "Fingerprint": "kevbtkaxmn",
+      "Integrity": "RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "jlgubt13sv",
-      "Integrity": "eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=",
+      "Fingerprint": "kevbtkaxmn",
+      "Integrity": "RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css"
@@ -195,7 +195,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "222"
+          "Value": "495"
         },
         {
           "Name": "Content-Type",
@@ -203,11 +203,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=\""
+          "Value": "\"RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 10:29:21 GMT"
+          "Value": "Wed, 07 May 2025 08:30:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -217,12 +217,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0="
+          "Value": "sha256-RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw="
         }
       ]
     },
     {
-      "Route": "BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css",
+      "Route": "BlazingQuiz.Shared.Components.kevbtkaxmn.bundle.scp.css",
       "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -232,7 +232,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "222"
+          "Value": "495"
         },
         {
           "Name": "Content-Type",
@@ -240,11 +240,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=\""
+          "Value": "\"RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 10:29:21 GMT"
+          "Value": "Wed, 07 May 2025 08:30:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -254,7 +254,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jlgubt13sv"
+          "Value": "kevbtkaxmn"
         },
         {
           "Name": "label",
@@ -262,12 +262,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0="
+          "Value": "sha256-RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw="
         }
       ]
     },
     {
-      "Route": "BlazingQuiz.Shared.Components.jlgubt13sv.styles.css",
+      "Route": "BlazingQuiz.Shared.Components.kevbtkaxmn.styles.css",
       "AssetFile": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazingQuiz.Shared.Components.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -277,7 +277,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "222"
+          "Value": "495"
         },
         {
           "Name": "Content-Type",
@@ -285,11 +285,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=\""
+          "Value": "\"RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 10:29:21 GMT"
+          "Value": "Wed, 07 May 2025 08:30:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -299,7 +299,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jlgubt13sv"
+          "Value": "kevbtkaxmn"
         },
         {
           "Name": "label",
@@ -307,7 +307,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0="
+          "Value": "sha256-RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw="
         }
       ]
     },
@@ -322,7 +322,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "222"
+          "Value": "495"
         },
         {
           "Name": "Content-Type",
@@ -330,11 +330,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=\""
+          "Value": "\"RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 04 May 2025 10:29:21 GMT"
+          "Value": "Wed, 07 May 2025 08:30:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -344,7 +344,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0="
+          "Value": "sha256-RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw="
         }
       ]
     },
