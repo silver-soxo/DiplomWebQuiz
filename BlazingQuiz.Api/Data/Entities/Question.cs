@@ -15,5 +15,8 @@ namespace BlazingQuiz.Api.Data.Entities
         public virtual Quiz Quiz { get; set; }
 
         public virtual ICollection<Option> Options { get; set; }
+
+        //ДОБАВЛЕННО ИНДУСОМ В ПОПЫТКЕ ИСПРАИВТЬ ОШИБКУ В МИГРАЦИИ
+        public virtual ICollection<StudentQuizQuestion> StudentQuizQuestion { get; set; } = [];
     }
 }

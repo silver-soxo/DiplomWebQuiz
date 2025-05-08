@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazingQuiz.Api.Data.Migrations
 {
     [DbContext(typeof(QuizContext))]
-    [Migration("20250508115205_StudentQuizMigrations")]
+    [Migration("20250508181715_StudentQuizMigrations")]
     partial class StudentQuizMigrations
     {
         /// <inheritdoc />
@@ -219,7 +219,7 @@ namespace BlazingQuiz.Api.Data.Migrations
                             Email = "admin@bk.ru",
                             IsApproved = true,
                             Name = "Andrey",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBS3bKSZO3r5O8hdWepiVPfItN9Rt/l/XNrb/DdE980+6dkCnTbjmewQ/8mbn4dPfQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFC0+fmiNapsfvOAvUpKZeg66Wa4+7BvrfN+GvZtJpXs7iH13l56+IBnIFU8Puu+Yg==",
                             Phone = "89777441323",
                             Role = "Admin"
                         });
@@ -280,15 +280,15 @@ namespace BlazingQuiz.Api.Data.Migrations
             modelBuilder.Entity("BlazingQuiz.Api.Data.Entities.StudentQuizQuestion", b =>
                 {
                     b.HasOne("BlazingQuiz.Api.Data.Entities.Question", "Question")
-                        .WithMany()
+                        .WithMany("StudentQuizQuestion")
                         .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("BlazingQuiz.Api.Data.Entities.StudentQuiz", "StudentQuiz")
-                        .WithMany()
+                        .WithMany("StudentQuizQuestion")
                         .HasForeignKey("StudentQuizId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Question");
@@ -299,11 +299,18 @@ namespace BlazingQuiz.Api.Data.Migrations
             modelBuilder.Entity("BlazingQuiz.Api.Data.Entities.Question", b =>
                 {
                     b.Navigation("Options");
+
+                    b.Navigation("StudentQuizQuestion");
                 });
 
             modelBuilder.Entity("BlazingQuiz.Api.Data.Entities.Quiz", b =>
                 {
                     b.Navigation("Questions");
+                });
+
+            modelBuilder.Entity("BlazingQuiz.Api.Data.Entities.StudentQuiz", b =>
+                {
+                    b.Navigation("StudentQuizQuestion");
                 });
 #pragma warning restore 612, 618
         }

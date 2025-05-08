@@ -244,6 +244,154 @@
           }
         }
       }
+    },
+    "/api/student/quiz/{quizId}/start": {
+      "post": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "quizId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/student/quiz/{studentQuizId}/next-question": {
+      "get": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "studentQuizId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/student/quiz/{studentQuizId}/save-response": {
+      "post": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "studentQuizId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StudentQuizQuestionResponseDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/student/quiz/{studentQuizId}/submit": {
+      "post": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "studentQuizId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/student/quiz/{studentQuizId}/auto-submit": {
+      "post": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "studentQuizId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/student/quiz/{studentQuizId}/exit": {
+      "post": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "studentQuizId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -405,6 +553,24 @@
             "maxLength": 250,
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "StudentQuizQuestionResponseDto": {
+        "type": "object",
+        "properties": {
+          "studentQuizId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "questionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "optionId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

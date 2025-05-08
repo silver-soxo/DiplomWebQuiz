@@ -35,7 +35,7 @@
         {
             foreach (var q in _quizes)
             {
-                <div class="col-sm-4 mb-3">
+                <div class="col-sm-4 mb-3 shadow">
                     <div class="box bg-white p-3">
                         <h5 class="fw-bold">@q.Name</h5>
                         <hr />
@@ -78,7 +78,8 @@
 {
     var title = $"Начать тестирование: {_startingQuiz.Name}?";
 
-    <Modal Title="@title" OnCancelClick="() => _startingQuiz = null" OnActionButtonClick="StartQuiz">
+    <Modal Title="@title" OnCancelClick="() => _startingQuiz = null" 
+    OnActionButtonClick="StartQuizAsync">
         <p class="m-0 p-3">Хотите начать тестирование?<br />У вас будет всего одна попытка.</p>
     </Modal>
 }
@@ -122,9 +123,32 @@
         AppState.HideLoader();
     }
 
-    private void StartQuiz()
+    private async Task StartQuizAsync()
     {
-        QuizState.SetQuiz(_startingQuiz);
-        NavigationManager.NavigateTo("student/quiz");
+        AppState.ShowLoader("Загрузка теста");
+
+        try
+        {
+            QuizApiResponse<int> response = await StudentQuizApi.StartQuizAsync(_startingQuiz.Id);
+
+            if (!response.IsSuccess)
+            {
+                //вывести сообщение об ошибке
+                return;
+            }
+            int studentQuizId = response.Data;
+
+            QuizState.StartQuiz(_startingQuiz, studentQuizId);
+            NavigationManager.NavigateTo("student/quiz");
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
+        finally
+        {
+            AppState.HideLoader();    
+        }
     }
 }

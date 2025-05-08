@@ -40,14 +40,12 @@ namespace BlazingQuiz.Api.Data.Migrations
                         name: "FK_StudentQuizQuestion_Questions_QuestionId",
                         column: x => x.QuestionId,
                         principalTable: "Questions",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_StudentQuizQuestion_StudentQuizzes_StudentQuizId",
                         column: x => x.StudentQuizId,
                         principalTable: "StudentQuizzes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.UpdateData(
@@ -55,7 +53,7 @@ namespace BlazingQuiz.Api.Data.Migrations
                 keyColumn: "Id",
                 keyValue: 1,
                 columns: new[] { "Email", "PasswordHash" },
-                values: new object[] { "admin@bk.ru", "AQAAAAIAAYagAAAAEBS3bKSZO3r5O8hdWepiVPfItN9Rt/l/XNrb/DdE980+6dkCnTbjmewQ/8mbn4dPfQ==" });
+                values: new object[] { "admin@bk.ru", "AQAAAAIAAYagAAAAEFC0+fmiNapsfvOAvUpKZeg66Wa4+7BvrfN+GvZtJpXs7iH13l56+IBnIFU8Puu+Yg==" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_StudentQuizQuestion_QuestionId",

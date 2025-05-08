@@ -6213,13 +6213,6 @@ C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\nw45d5vd7k-tptq2av103.gz
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\g1sj2nrq5i-lfu7j35m59.gz
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\x3c1ywxizh-oyz0vx2fzb.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\xj8qpstz1j-nzqagiea4a.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\cz4f9xku45-hgtiaj1hfl.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\x1vu3s9it7-q5o01xjql7.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\g5kob0xhiu-6i01mstpeh.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\94pp81wawt-kfkhz61u9z.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\65bcn76m3r-hh9znmr5ea.gz
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\q17o23y4ai-z2gws4dtpy.gz
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -6232,3 +6225,10 @@ C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\BlazingQ.872A54CA.Up2Date
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\ref\BlazingQuiz.Web.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\xj8qpstz1j-c2cibv0b1h.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\cz4f9xku45-7eelnz7now.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\x1vu3s9it7-9igyk012qo.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\g5kob0xhiu-9smamv013f.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\94pp81wawt-mwwloq9gbi.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\65bcn76m3r-k54yzff5jf.gz
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Web\obj\Debug\net8.0\compressed\q17o23y4ai-29z4fvsbbw.gz

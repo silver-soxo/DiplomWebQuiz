@@ -31,7 +31,19 @@ namespace BlazingQuiz.Api.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StudentQuizQuestion>().HasKey(s=> new { s.StudentQuizId, s.QuestionId});
-            
+
+            //ДОБАВЛЕННО ИНДУСОМ В ПОПЫТКЕ ИСПРАИВТЬ ОШИБКУ В МИГРАЦИИ
+            modelBuilder.Entity<StudentQuizQuestion>()
+                .HasOne(s => s.StudentQuiz)
+                .WithMany(s => s.StudentQuizQuestion)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            //ДОБАВЛЕННО ИНДУСОМ В ПОПЫТКЕ ИСПРАИВТЬ ОШИБКУ В МИГРАЦИИ
+            modelBuilder.Entity<StudentQuizQuestion>()
+                .HasOne(s => s.Question)
+                .WithMany(s => s.StudentQuizQuestion)
+                .OnDelete(DeleteBehavior.NoAction);
+
             base.OnModelCreating(modelBuilder);
 
             var adminUser = new User

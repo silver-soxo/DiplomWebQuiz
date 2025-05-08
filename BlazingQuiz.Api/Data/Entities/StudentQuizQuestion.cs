@@ -9,5 +9,8 @@ namespace BlazingQuiz.Api.Data.Entities
 
         public virtual StudentQuiz StudentQuiz { get; set; }
         public virtual Question Question { get; set; }
+
+
+
     }
 }
