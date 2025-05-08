@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>fsfvy1jyv1</Fingerprint>
-      <Integrity>UeiRpFXqlkmyBPofJHrg5GE3cOGS7u18jbBofWl+K0Y=</Integrity>
+      <Fingerprint>i8oysiglag</Fingerprint>
+      <Integrity>zuxzPj13eAiybd2pUwb3mIk5swwGlmFpZLOyR/Po7b0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazingQuiz.Mobile.styles.css'))</OriginalItemSpec>

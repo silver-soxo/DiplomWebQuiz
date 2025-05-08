@@ -96,6 +96,7 @@ C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\refint\Bl
 C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\BlazingQuiz.Shared.Components.pdb
 C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\BlazingQuiz.Shared.Components.genruntimeconfig.cache
 C:\Diplom\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\ref\BlazingQuiz.Shared.Components.dll
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\scopedcss\Components\Loader.razor.rz.scp.css
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\bin\Debug\net8.0\BlazingQuiz.Shared.Components.staticwebassets.runtime.json
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\bin\Debug\net8.0\BlazingQuiz.Shared.Components.staticwebassets.endpoints.json
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\bin\Debug\net8.0\BlazingQuiz.Shared.Components.deps.json
@@ -111,6 +112,7 @@ C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Compone
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\BlazingQuiz.Shared.Components.csproj.CoreCompileInputs.cache
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\BlazingQuiz.Shared.Components.sourcelink.json
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\scopedcss\Component1.razor.rz.scp.css
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\scopedcss\Components\Loader.razor.rz.scp.css
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\scopedcss\bundle\BlazingQuiz.Shared.Components.styles.css
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\scopedcss\projectbundle\BlazingQuiz.Shared.Components.bundle.scp.css
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\staticwebassets.build.json
@@ -129,4 +131,3 @@ C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Compone
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\BlazingQuiz.Shared.Components.pdb
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\BlazingQuiz.Shared.Components.genruntimeconfig.cache
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\ref\BlazingQuiz.Shared.Components.dll
-D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Shared.Components\obj\Debug\net8.0\scopedcss\Components\Loader.razor.rz.scp.css

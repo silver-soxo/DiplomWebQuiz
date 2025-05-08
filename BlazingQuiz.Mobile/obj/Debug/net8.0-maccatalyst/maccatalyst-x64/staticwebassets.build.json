@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0QjbWz1oGBULplxpkgfA6+lacb12VSxJh6AJZe4LZ60=",
+  "Hash": "AEa9BBeFzqt3Z2H0S6L2pSx1DY+aQdsPYA7b5MhiuAA=",
   "Source": "BlazingQuiz.Mobile",
   "BasePath": "/",
   "Mode": "Root",
@@ -50,8 +50,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "fsfvy1jyv1",
-      "Integrity": "UeiRpFXqlkmyBPofJHrg5GE3cOGS7u18jbBofWl+K0Y=",
+      "Fingerprint": "i8oysiglag",
+      "Integrity": "zuxzPj13eAiybd2pUwb3mIk5swwGlmFpZLOyR/Po7b0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css"
@@ -197,8 +197,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "jlgubt13sv",
-      "Integrity": "eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=",
+      "Fingerprint": "kevbtkaxmn",
+      "Integrity": "RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css"
@@ -344,7 +344,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "222"
+          "Value": "495"
         },
         {
           "Name": "Content-Type",
@@ -352,22 +352,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=\""
+          "Value": "\"RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:13:26 GMT"
+          "Value": "Thu, 08 May 2025 11:14:05 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0="
+          "Value": "sha256-RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw="
         }
       ]
     },
     {
-      "Route": "_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css",
+      "Route": "_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.kevbtkaxmn.bundle.scp.css",
       "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazingQuiz.Shared.Components.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -381,7 +381,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "222"
+          "Value": "495"
         },
         {
           "Name": "Content-Type",
@@ -389,21 +389,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0=\""
+          "Value": "\"RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:13:26 GMT"
+          "Value": "Thu, 08 May 2025 11:14:05 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jlgubt13sv"
+          "Value": "kevbtkaxmn"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eQFKZMUd46eVjhQWwa6V5ZKNUwePr4khGBsTx+nipz0="
+          "Value": "sha256-RJ9scRPbYdG6oC3KNFeqNypmdgwc4rQ7wBJNXwCEoSw="
         },
         {
           "Name": "label",
@@ -576,7 +576,7 @@
       ]
     },
     {
-      "Route": "BlazingQuiz.Mobile.fsfvy1jyv1.styles.css",
+      "Route": "BlazingQuiz.Mobile.i8oysiglag.styles.css",
       "AssetFile": "C:\\Users\\allah\\source\\repos\\silver-soxo\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\BlazingQuiz.Mobile.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -598,25 +598,25 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UeiRpFXqlkmyBPofJHrg5GE3cOGS7u18jbBofWl+K0Y=\""
+          "Value": "\"zuxzPj13eAiybd2pUwb3mIk5swwGlmFpZLOyR/Po7b0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:13:28 GMT"
+          "Value": "Thu, 08 May 2025 11:49:44 GMT"
         },
         {
           "Name": "Link",
-          "Value": "<_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+          "Value": "<_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.kevbtkaxmn.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fsfvy1jyv1"
+          "Value": "i8oysiglag"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UeiRpFXqlkmyBPofJHrg5GE3cOGS7u18jbBofWl+K0Y="
+          "Value": "sha256-zuxzPj13eAiybd2pUwb3mIk5swwGlmFpZLOyR/Po7b0="
         },
         {
           "Name": "label",
@@ -647,21 +647,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UeiRpFXqlkmyBPofJHrg5GE3cOGS7u18jbBofWl+K0Y=\""
+          "Value": "\"zuxzPj13eAiybd2pUwb3mIk5swwGlmFpZLOyR/Po7b0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 06 May 2025 14:13:28 GMT"
+          "Value": "Thu, 08 May 2025 11:49:44 GMT"
         },
         {
           "Name": "Link",
-          "Value": "<_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.jlgubt13sv.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+          "Value": "<_content/BlazingQuiz.Shared.Components/BlazingQuiz.Shared.Components.kevbtkaxmn.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UeiRpFXqlkmyBPofJHrg5GE3cOGS7u18jbBofWl+K0Y="
+          "Value": "sha256-zuxzPj13eAiybd2pUwb3mIk5swwGlmFpZLOyR/Po7b0="
         }
       ]
     },

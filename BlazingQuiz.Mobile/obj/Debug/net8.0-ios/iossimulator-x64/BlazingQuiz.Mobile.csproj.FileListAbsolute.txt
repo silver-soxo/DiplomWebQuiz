@@ -1282,7 +1282,6 @@ C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Deb
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Shared.Components.pdb
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\bin\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Shared.pdb
-C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\bundle\BlazingQuiz.Mobile.styles.css

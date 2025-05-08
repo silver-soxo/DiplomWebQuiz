@@ -127,7 +127,7 @@ namespace BlazingQuiz.Api.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CompletedOn")
+                    b.Property<DateTime?>("CompletedOn")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("QuizId")
@@ -139,6 +139,10 @@ namespace BlazingQuiz.Api.Data.Migrations
                     b.Property<DateTime>("StartedOn")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
@@ -149,6 +153,21 @@ namespace BlazingQuiz.Api.Data.Migrations
                     b.HasIndex("StudentId");
 
                     b.ToTable("StudentQuizzes");
+                });
+
+            modelBuilder.Entity("BlazingQuiz.Api.Data.Entities.StudentQuizQuestion", b =>
+                {
+                    b.Property<int>("StudentQuizId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QuestionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("StudentQuizId", "QuestionId");
+
+                    b.HasIndex("QuestionId");
+
+                    b.ToTable("StudentQuizQuestion");
                 });
 
             modelBuilder.Entity("BlazingQuiz.Api.Data.Entities.User", b =>
@@ -194,10 +213,10 @@ namespace BlazingQuiz.Api.Data.Migrations
                         new
                         {
                             Id = 1,
-                            Email = "adbmin@bk.ru",
+                            Email = "admin@bk.ru",
                             IsApproved = true,
                             Name = "Andrey",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMtjqm5sgG6l/3ka1BFaaiQwJi9rYXb+HSNo/jrUueQRYimBYzF0VeEO967e4eVwZA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBS3bKSZO3r5O8hdWepiVPfItN9Rt/l/XNrb/DdE980+6dkCnTbjmewQ/8mbn4dPfQ==",
                             Phone = "89777441323",
                             Role = "Admin"
                         });
@@ -253,6 +272,25 @@ namespace BlazingQuiz.Api.Data.Migrations
                     b.Navigation("Quiz");
 
                     b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("BlazingQuiz.Api.Data.Entities.StudentQuizQuestion", b =>
+                {
+                    b.HasOne("BlazingQuiz.Api.Data.Entities.Question", "Question")
+                        .WithMany()
+                        .HasForeignKey("QuestionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BlazingQuiz.Api.Data.Entities.StudentQuiz", "StudentQuiz")
+                        .WithMany()
+                        .HasForeignKey("StudentQuizId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Question");
+
+                    b.Navigation("StudentQuiz");
                 });
 
             modelBuilder.Entity("BlazingQuiz.Api.Data.Entities.Question", b =>

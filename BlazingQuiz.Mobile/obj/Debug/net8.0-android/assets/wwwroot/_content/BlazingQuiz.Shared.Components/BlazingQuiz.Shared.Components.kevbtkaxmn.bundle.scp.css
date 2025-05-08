@@ -1,0 +1,20 @@
+/* _content/BlazingQuiz.Shared.Components/Component1.razor.rz.scp.css */
+.my-component[b-x3cmbozxfm] {
+    border: 2px dashed red;
+    padding: 1em;
+    margin: 1em 0;
+    background-image: url('background.png');
+}
+/* _content/BlazingQuiz.Shared.Components/Components/Loader.razor.rz.scp.css */
+.fullscreen[b-rkhs95wt33] {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.overlay[b-rkhs95wt33] {
+    background-color: black;
+    opacity: 0.5;
+}
