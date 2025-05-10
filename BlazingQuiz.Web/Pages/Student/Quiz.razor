@@ -1,5 +1,7 @@
 ﻿@page "/student/quiz"
 
+@layout QuizPageLayout
+
 @inject NavigationManager NavigationManager
 @inject QuizState QuizState
 @inject IStudentQuizApi StudentQuizApi
@@ -61,7 +63,7 @@
 
 @if (_showExitQuizCofirmation)
 {
-	<Modal Title="Покинуть тестирование?" OnActionButtonClick="ExitQuizAsync" 
+	<Modal Title="Покинуть тестирование?" ActionButtonText="Да" OnActionButtonClick="ExitQuizAsync" 
 	OnCancelClick="() => _showExitQuizCofirmation = false">
 		<h5 class="text-danger">Вы действительно хотите покинуть тестирование</h5>
 	</Modal>

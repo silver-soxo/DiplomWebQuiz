@@ -1,8 +1,52 @@
 ﻿@page "/student/my-quizes"
-@inject IAppState AppState
 
-<h3>MyQuizes</h3>
+@inject IAppState AppState
+@inject IStudentQuizApi StudentQuizApi
+
+<SectionContent SectionName="pageTitle">Мои тесты</SectionContent>
+
+<div class="container">
+	<QuickGrid ItemsProvider="_itemsProvider" Pagination="_paginationState" Class="table table-striped table-hover">
+		<PropertyColumn Property="q=> q.QuizName" Title="Название теста"/>
+		<PropertyColumn Property="q=> q.CategoryName" Title="Название категории"/>
+		<PropertyColumn Property="q=> q.Status" Title="Статус"/>
+		<PropertyColumn Property="q=> q.Score" Title="Оценка???" Class="text-center"/>
+		<PropertyColumn Property="q=> q.StartedOn" Title="Дата начала" Format="dd MM yyyy hh:mm"/>
+		<TemplateColumn Title="Дата завершения">
+			@if (context.CompletedOn.HasValue)
+			{
+					<span>@context.CompletedOn.Value.ToString("dd MM yyyy hh:mm")</span>
+			}
+			else
+			{
+				if (context.Status == "Exited")
+				{
+					<span>Тетстирование прервано</span>
+				}
+				else
+				{
+					<span>-</span>
+				}
+			}
+		</TemplateColumn>
+	</QuickGrid>
+	<Paginator State="_paginationState"/>
+</div>
 
 @code {
+	private const int DefaultPageSize = 10000;
+	private GridItemsProvider<StudentQuizDto>? _itemsProvider;
 
+	private PaginationState _paginationState = new PaginationState { ItemsPerPage = DefaultPageSize };
+
+	protected override void OnInitialized()
+	{
+		_itemsProvider = async (request) =>
+		{
+			AppState.ShowLoader("Получение результатов тестирований");
+			var pagedResult = await StudentQuizApi.GetStudentQuizesAsync(request.StartIndex, request.Count ?? DefaultPageSize);
+			AppState.HideLoader();
+			return GridItemsProviderResult.From(pagedResult.Records, pagedResult.TotalCount);
+		};	
+	}
 }

@@ -188,6 +188,33 @@
   {
     "ContainingType": "BlazingQuiz.Api.Endpoints.StudentQuizEndpoints\u002B\u003C\u003Ec",
     "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_2",
+    "RelativePath": "api/student/my-quizes",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startIndex",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BlazingQuiz.Api.Endpoints.StudentQuizEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_3",
     "RelativePath": "api/student/quiz/{quizId:guid}/start",
     "HttpMethod": "POST",
     "IsController": false,
@@ -209,7 +236,7 @@
   },
   {
     "ContainingType": "BlazingQuiz.Api.Endpoints.StudentQuizEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_6",
+    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_7",
     "RelativePath": "api/student/quiz/{studentQuizId:int}/auto-submit",
     "HttpMethod": "POST",
     "IsController": false,
@@ -231,7 +258,7 @@
   },
   {
     "ContainingType": "BlazingQuiz.Api.Endpoints.StudentQuizEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_7",
+    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_8",
     "RelativePath": "api/student/quiz/{studentQuizId:int}/exit",
     "HttpMethod": "POST",
     "IsController": false,
@@ -253,7 +280,7 @@
   },
   {
     "ContainingType": "BlazingQuiz.Api.Endpoints.StudentQuizEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_3",
+    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_4",
     "RelativePath": "api/student/quiz/{studentQuizId:int}/next-question",
     "HttpMethod": "GET",
     "IsController": false,
@@ -275,7 +302,7 @@
   },
   {
     "ContainingType": "BlazingQuiz.Api.Endpoints.StudentQuizEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_4",
+    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_5",
     "RelativePath": "api/student/quiz/{studentQuizId:int}/save-response",
     "HttpMethod": "POST",
     "IsController": false,
@@ -302,7 +329,7 @@
   },
   {
     "ContainingType": "BlazingQuiz.Api.Endpoints.StudentQuizEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_5",
+    "Method": "\u003CMapStudentQuizEndpoints\u003Eb__1_6",
     "RelativePath": "api/student/quiz/{studentQuizId:int}/submit",
     "HttpMethod": "POST",
     "IsController": false,
