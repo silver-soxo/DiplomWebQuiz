@@ -1,0 +1,62 @@
+
+@implements IDisposable
+
+<label class="fw-bold">
+	<span class="@_textColorClass">@_currentDisplayTime</span>/@_totalDisplayTime
+</label>
+
+@code{
+	[Parameter, EditorRequired]
+	public int TotalMinutes { get; set; }
+
+	[Parameter]
+	public EventCallback OnTimerStop { get; set; }
+
+	private DateTime _totalTime;
+
+	private string _totalDisplayTime = "";
+	private string _currentDisplayTime = "00:00";
+	private string _textColorClass = "";
+
+	private PeriodicTimer? _periodicTimer;
+
+	protected override void OnInitialized()
+	{
+		_totalDisplayTime = $"{TotalMinutes.ToString().PadLeft(2, '0')}:00";
+		_totalTime = DateTime.Now.AddMinutes(TotalMinutes);
+
+		_periodicTimer = new PeriodicTimer(TimeSpan.FromSeconds(1));
+		HandleTimerAsync();
+	}
+
+	private async Task HandleTimerAsync()
+	{
+		while (await _periodicTimer!.WaitForNextTickAsync())
+		{
+			//nasha logika	
+			var diff = _totalTime - DateTime.Now;
+			if (diff <= TimeSpan.Zero)
+			{
+				//ostanovka timera
+				_periodicTimer.Dispose();
+				_periodicTimer = null;
+				await OnTimerStop.InvokeAsync();
+				return;
+			}
+			
+			if (diff.TotalSeconds <= 60)
+			{
+				_textColorClass = "text-danger";
+			}
+
+			_currentDisplayTime = diff.ToString("mm\\:ss");
+			await InvokeAsync(StateHasChanged);
+		}	
+
+	}
+
+	public void Dispose()
+	{
+		_periodicTimer.Dispose();
+	}
+}
