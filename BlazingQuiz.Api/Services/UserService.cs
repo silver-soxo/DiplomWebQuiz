@@ -47,5 +47,34 @@ namespace BlazingQuiz.Api.Services
             }
         }
 
+        public async Task DeleteUserAsync(int userId)
+        {
+            using var transaction = await _context.Database.BeginTransactionAsync();
+
+            try
+            {
+                // Удаление связанных записей
+                await _context.StudentQuizQuestion
+                    .Where(sqq => _context.StudentQuizzes
+                        .Any(sq => sq.StudentId == userId && sq.Id == sqq.StudentQuizId))
+                    .ExecuteDeleteAsync();
+
+                await _context.StudentQuizzes
+                    .Where(sq => sq.StudentId == userId)
+                    .ExecuteDeleteAsync();
+
+                await _context.Users
+                    .Where(u => u.Id == userId)
+                    .ExecuteDeleteAsync();
+
+                await transaction.CommitAsync();
+            }
+            catch
+            {
+                await transaction.RollbackAsync();
+                throw;
+            }
+        }
+
     }
 }

@@ -160,3 +160,12 @@ main[b-xc8euduzwf] {
         overflow-y: auto;
     }
 }
+/* /Pages/Student/Quiz.razor.rz.scp.css */
+.option-box[b-9b0vo9j6m7]{
+    transition: all ease 0.2s;
+}
+    .option-box:hover[b-9b0vo9j6m7]{
+    border-radius: 10px;
+    box-shadow: 0 0 18px 1px #bebebe;
+
+    }

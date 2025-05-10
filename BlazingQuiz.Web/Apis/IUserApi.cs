@@ -13,5 +13,8 @@ namespace BlazingQuiz.Web.Apis
 
         [Patch("/api/users/{userId}/toggle-status")]
         Task ToggleUserApprovedStatusAsync(int userId);
+
+        [Delete("/api/users/{userId}")]
+        Task DeleteUserAsync(int userId); // Добавьте этот метод
     }
 }

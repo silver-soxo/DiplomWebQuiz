@@ -216,7 +216,7 @@ namespace BlazingQuiz.Api.Data.Migrations
                             Email = "admin@bk.ru",
                             IsApproved = true,
                             Name = "Andrey",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFC0+fmiNapsfvOAvUpKZeg66Wa4+7BvrfN+GvZtJpXs7iH13l56+IBnIFU8Puu+Yg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEID6F2qbMMbxIk8RLajBXT92eCSbVMVdJodHoEqRNAAMZJXpycT9dr+DLghIWU+GUg==",
                             Phone = "89777441323",
                             Role = "Admin"
                         });

@@ -21,6 +21,12 @@ namespace BlazingQuiz.Api.Endpoints
                 await service.ToggleUserApprovedStatusAsync(userId);
                 Results.Ok();
             });
+
+            group.MapDelete("{userId:int}", async (int userId, UserService service) =>
+            {
+                await service.DeleteUserAsync(userId);
+                Results.Ok();
+            });
             return app;
         }
     }

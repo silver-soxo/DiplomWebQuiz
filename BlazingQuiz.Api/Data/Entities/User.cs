@@ -20,6 +20,5 @@ namespace BlazingQuiz.Api.Data.Entities
         public string Role { get; set; } = nameof(UserRole.Student);
 
         public bool IsApproved { get; set; }
-
     }
 }
