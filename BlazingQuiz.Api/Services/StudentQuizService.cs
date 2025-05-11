@@ -221,6 +221,7 @@ namespace BlazingQuiz.Api.Services
                     Score = q.Score,
                     StartedOn = q.StartedOn,
                     CompletedOn = q.CompletedOn,
+                    TotalQuestions = q.Quiz.TotalQuestions
                 })
                 .ToArrayAsync();
 

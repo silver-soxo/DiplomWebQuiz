@@ -54,6 +54,7 @@
 								<div class="d-flex justify-content-around">
 									<button type="button" class="btn btn-sm btn-info" @onclick="() => ViewQuestionsAsync(q)">Просмотреть вопросы</button>
 									<a href="admin/edit-quiz/@q.Id" class="btn btn-sm btn-primary">Редактировать</a>
+									<button type="button" class="btn btn-sm btn-danger" @onclick="() => OnDeleteUserAsync(q)">Удалить</button>
 								</div>
 							</td>
 
@@ -87,6 +88,11 @@
 
 	private QuestionDto[] _viewingQuestions = [];
 	private bool _showQuestionsModal;
+
+	private bool _shouldReRender = true;
+	protected override bool ShouldRender() => _shouldReRender;
+
+	private QuickGrid<QuizListDto> _grid;
 
 	protected override async Task OnInitializedAsync()
 	{
@@ -127,5 +133,21 @@
 		_viewingQuestions = await QuizApi.GetQuizQuestionsAsync(q.Id);
 		AppState.HideLoader();
 		_showQuestionsModal = true;
+	}
+
+	private async Task OnDeleteUserAsync(QuizListDto quiz)
+	{
+		_shouldReRender = false;
+		AppState.ShowLoader("Удаление тестирования");
+		await QuizApi.DeleteQuizAsync(quiz.Id);
+		_shouldReRender = true;
+		AppState.HideLoader();
+
+		// Обновляем данные в таблице
+		if (_grid != null)
+			await _grid.RefreshDataAsync();
+
+		//Удалить после реализации грида
+		await OnInitializedAsync();
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using BlazingQuiz.Api.Services;
 using BlazingQuiz.Shared;
+using System.Security.Claims;
 
 namespace BlazingQuiz.Api.Endpoints
 {
@@ -27,6 +28,13 @@ namespace BlazingQuiz.Api.Endpoints
                 await service.DeleteUserAsync(userId);
                 Results.Ok();
             });
+
+            group.MapGet("/student-quizes", async (int studentId, int startIndex, int pageSize, UserService service) =>
+            {
+                var result = await service.GetViewStudentQuizesAsync(studentId, startIndex, pageSize);
+                return Results.Ok(result);
+            });
+
             return app;
         }
     }

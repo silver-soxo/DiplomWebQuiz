@@ -2,6 +2,7 @@
 
 @inject IUserApi UserApi
 @inject IAppState AppState
+@inject IStudentQuizApi StudentQuizApi
 
 <SectionContent SectionName="pageTitle">Управление студентами</SectionContent>
 
@@ -43,14 +44,53 @@
 			</div>
 		</TemplateColumn>
 		<TemplateColumn Title="Действия">
+			<button type="button" class="btn btn-sm btn-success" @onclick="() => ShowStudentResults(context)">Промотр</button>
 			<button type="button" class="btn btn-sm btn-danger" @onclick="() => OnDeleteUserAsync(context)">Удалить</button>
 		</TemplateColumn>
 	</QuickGrid>
 	@* <Paginator State="_paginationState" /> *@
 </div>
 
+@if (_showQuestionsModal)
+{
+	<Modal Title="Вопросы" ActionButtonText="Ok" Size="ModalSize.ExtraLarge"
+		   OnActionButtonClick="() => _showQuestionsModal = false"
+		   OnCancelClick="() => _showQuestionsModal = false">
+		<QuickGrid ItemsProvider="_itemsProvider" Pagination="_paginationState" Class="table table-striped table-hover">
+			<PropertyColumn Property="q=> q.QuizName" Title="Название теста" />
+			<PropertyColumn Property="q=> q.CategoryName" Title="Название категории" />
+			<PropertyColumn Property="q=> q.Status" Title="Статус" />
+			<TemplateColumn Title="Оценка">
+				<span>@context.Score из @context.TotalQuestions</span>
+			</TemplateColumn>
+			<PropertyColumn Property="q=> q.StartedOn" Title="Дата начала" Format="dd MM yyyy hh:mm" />
+			<TemplateColumn Title="Дата завершения">
+				@if (context.CompletedOn.HasValue)
+				{
+					<span>@context.CompletedOn.Value.ToString("dd MM yyyy hh:mm")</span>
+				}
+				else
+				{
+					if (context.Status == "Exited")
+					{
+						<span>Тетстирование прервано</span>
+					}
+					else
+					{
+						<span>-</span>
+					}
+				}
+			</TemplateColumn>
+		</QuickGrid>
+	</Modal>
+}
+
 @code {
+	private bool _showQuestionsModal;
+
 	private const int DefaultPageSize = 1000;
+
+	private GridItemsProvider<StudentQuizDto>? _itemsProvider;
 
 	private QuickGrid<UserDto> _grid;
 
@@ -101,5 +141,17 @@
 		// Обновляем данные в таблице
 		if (_grid != null)
 			await _grid.RefreshDataAsync();
+	}
+
+	private async Task ShowStudentResults(UserDto user)
+	{
+		_itemsProvider = async request =>
+		{
+			AppState.ShowLoader("Получение результатов тестирований");
+			var pagedResult = await UserApi.GetViewStudentQuizesAsync(user.Id, request.StartIndex, request.Count ?? DefaultPageSize);
+			AppState.HideLoader();
+			return GridItemsProviderResult.From(pagedResult.Records, pagedResult.TotalCount);
+		};
+		_showQuestionsModal = true;
 	}
 }

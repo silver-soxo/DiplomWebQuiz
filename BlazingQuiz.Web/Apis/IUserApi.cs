@@ -16,5 +16,8 @@ namespace BlazingQuiz.Web.Apis
 
         [Delete("/api/users/{userId}")]
         Task DeleteUserAsync(int userId); // Добавьте этот метод
+
+        [Get("/api/users/student-quizes")]
+        Task<PagedResult<StudentQuizDto>> GetViewStudentQuizesAsync(int studentId, int startIndex, int pageSize);
     }
 }

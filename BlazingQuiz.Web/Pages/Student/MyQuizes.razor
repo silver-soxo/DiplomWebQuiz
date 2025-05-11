@@ -10,7 +10,9 @@
 		<PropertyColumn Property="q=> q.QuizName" Title="Название теста"/>
 		<PropertyColumn Property="q=> q.CategoryName" Title="Название категории"/>
 		<PropertyColumn Property="q=> q.Status" Title="Статус"/>
-		<PropertyColumn Property="q=> q.Score" Title="Оценка???" Class="text-center"/>
+		<TemplateColumn Title="Оценка">
+			<span>@context.Score из @context.TotalQuestions</span>
+		</TemplateColumn>
 		<PropertyColumn Property="q=> q.StartedOn" Title="Дата начала" Format="dd MM yyyy hh:mm"/>
 		<TemplateColumn Title="Дата завершения">
 			@if (context.CompletedOn.HasValue)

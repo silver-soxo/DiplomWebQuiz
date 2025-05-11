@@ -32,6 +32,12 @@ namespace BlazingQuiz.Api.Endpoints
             quizGroup.MapGet("{quizId:guid}", async (Guid quizId, QuizService service) =>
                 Results.Ok(await service.GetQuizToEditAsync(quizId)));
 
+            quizGroup.MapDelete("{quizId:guid}", async (Guid quizId, QuizService service) =>
+            {
+                await service.DeleteQuizAsync(quizId);
+                Results.Ok();
+            });
+
             return app;
         }
     }

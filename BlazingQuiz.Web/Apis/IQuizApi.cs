@@ -18,5 +18,8 @@ namespace BlazingQuiz.Web.Apis
         [Get("/api/quizes/{quizId}")]
         Task<QuizSaveDto?> GetQuizToEditAsync(Guid quizId);
 
+        [Delete("/api/quizes/{quizId}")]
+        Task DeleteQuizAsync(Guid quizId); // Добавьте этот метод
+
     }
 }

@@ -131,5 +131,43 @@ namespace BlazingQuiz.Api.Services
                 }).FirstOrDefaultAsync();
             return quiz;
         }
+
+        public async Task DeleteQuizAsync(Guid quizId)
+        {
+            using var transaction = await _context.Database.BeginTransactionAsync();
+
+            try
+            {
+                // Удаление связанных записей
+                await _context.StudentQuizQuestion
+                    .Where(sqq => _context.StudentQuizzes
+                        .Any(sq => sq.QuizId == quizId && sq.Id == sqq.StudentQuizId))
+                    .ExecuteDeleteAsync();
+
+                await _context.Options
+                    .Where(sqq => _context.Questions
+                        .Any(sq => sq.QuizId == quizId && sq.Id == sqq.QuestionId))
+                    .ExecuteDeleteAsync();
+
+                await _context.StudentQuizzes
+                    .Where(sq => sq.QuizId == quizId)
+                    .ExecuteDeleteAsync();
+
+                await _context.Questions
+                    .Where(sq => sq.QuizId == quizId)
+                    .ExecuteDeleteAsync();
+
+                await _context.Quizzes
+                    .Where(u => u.Id == quizId)
+                    .ExecuteDeleteAsync();
+
+                await transaction.CommitAsync();
+            }
+            catch
+            {
+                await transaction.RollbackAsync();
+                throw;
+            }
+        }
     }
 }
