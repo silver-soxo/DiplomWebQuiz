@@ -55,7 +55,7 @@
 
 		<TemplateColumn Title="Действия">
 			<button type="button" class="btn btn-sm btn-success" @onclick="() => ShowStudentResults(context)">Просмотр результатов тестирований</button>
-			<button type="button" class="btn btn-sm btn-primary" @onclick="() => ShowStudentResults(context)">Редактировать</button>
+			<button type="button" class="btn btn-sm btn-primary" @onclick="() => GetStudentIdData(context.Id)">Редактировать</button>
 			<button type="button" class="btn btn-sm btn-danger" @onclick="() => OnDeleteUserAsync(context)">Удалить</button>
 		</TemplateColumn>
 	</QuickGrid>
@@ -108,14 +108,23 @@
 	</Modal>
 }
 
+@if (_showUserDataModal)
+{
+	//Реализовать вывод данных пользователя, вывод данных должен быть в 
+}
+
 @code {
 	private bool _showQuestionsModal;
+
+	private bool _showUserDataModal;
 
 	private const int DefaultPageSize = 1000;
 
 	private GridItemsProvider<StudentQuizDto>? _itemsProvider;
 
 	private QuickGrid<UserDto> _grid;
+
+	private UserUpdateDto _userData;
 
 	private GridItemsProvider<UserDto> _usersProvider;
 
@@ -139,7 +148,7 @@
 		user.IsApproved = !user.IsApproved;
 		_shouldReRender = false;
 		AppState.ShowLoader("Обновление статуса");
-		await UserApi.ToggleUserApprovedStatusAsync(user.Id, user.Name, user.Email);
+		await UserApi.ToggleUserApprovedStatusAsync(user.Id);
 		_shouldReRender = true;
 		AppState.HideLoader();
 	}
@@ -227,5 +236,15 @@
 		}
 	}
 
-	
+	// Получение данных студента по Id
+	private async Task GetStudentIdData(int id)
+	{
+		AppState.ShowLoader("Получение результатов тестирований");
+		var data = await UserApi.GetStudentIdData(id);
+		AppState.HideLoader();
+		_userData = data;
+
+		_showUserDataModal = true;
+	}
+
 }

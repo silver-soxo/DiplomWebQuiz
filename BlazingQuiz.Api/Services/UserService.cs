@@ -7,6 +7,9 @@ using ClosedXML.Excel;
 using System.IO;
 using System.Net.Mail;
 using System.Net;
+using DocumentFormat.OpenXml.Spreadsheet;
+using Microsoft.AspNetCore.Identity;
+using BlazingQuiz.Api.Data.Entities;
 
 
 namespace BlazingQuiz.Api.Services
@@ -14,7 +17,7 @@ namespace BlazingQuiz.Api.Services
     public class UserService
     {
         private readonly QuizContext _context;
-
+        private readonly IPasswordHasher<User> _passwordHasher;
         public UserService(QuizContext context) 
         {
             _context = context;
@@ -42,7 +45,7 @@ namespace BlazingQuiz.Api.Services
             return new PagedResult<UserDto>(users, total);
         }
 
-        public async Task ToggleUserApprovedStatusAsync(int userId, string name, string email) 
+        public async Task ToggleUserApprovedStatusAsync(int userId) 
         {
             var dbUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
             if (dbUser != null) 
@@ -219,5 +222,35 @@ namespace BlazingQuiz.Api.Services
         //    smtp.EnableSsl = true;
         //    await smtp.SendMailAsync(m);
         //}
+
+        public async Task<UserUpdateDto> GetStudentIdData(int studentId)
+        {
+            var query = await _context.Users.Where(q => q.Id == studentId)
+                .Select(u => new UserUpdateDto(u.Id, u.Name, u.Email, u.Phone, u.PasswordHash)).FirstOrDefaultAsync();
+            return query;
+            
+        }
+
+        //Метод обновления данных пользователя
+        public async Task UpdateUserData(UserUpdateDto user)
+        {
+            var dbUser = await _context.Users.FirstOrDefaultAsync(q => q.Id == user.Id);
+
+            dbUser.Id = user.Id;
+            dbUser.Name = user.Name;
+            dbUser.Email = user.Email;
+            dbUser.Phone = user.Phone;
+
+            var prof = new User
+            {
+                Email = user.Email,
+                Name = user.Name,
+                Phone = user.Phone,
+                Role = nameof(UserRole.Student),
+                IsApproved = false
+            };
+            dbUser.PasswordHash = _passwordHasher.HashPassword(prof, user.Password);
+            await _context.SaveChangesAsync();
+        }
     }
 }

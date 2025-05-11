@@ -1350,3 +1350,4 @@ C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Deb
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Mobile.pdb
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\BlazingQuiz.Mobile.genruntimeconfig.cache
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\ref\BlazingQuiz.Mobile.dll
+D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Mobile\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature

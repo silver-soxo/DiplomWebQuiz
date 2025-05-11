@@ -1,5 +1,6 @@
 ﻿using BlazingQuiz.Api.Services;
 using BlazingQuiz.Shared;
+using BlazingQuiz.Shared.DTOs;
 using System.Security.Claims;
 
 namespace BlazingQuiz.Api.Endpoints
@@ -17,9 +18,9 @@ namespace BlazingQuiz.Api.Endpoints
                 return Results.Ok(await service.GetUsersAsync(approvedType, StartIndex, pageSize));
             });
 
-            group.MapPatch("{userId:int}/toggle-status", async (int userId, string name, string email, UserService service) =>
+            group.MapPatch("{userId:int}/toggle-status", async (int userId, UserService service) =>
             {
-                await service.ToggleUserApprovedStatusAsync(userId, name, email);
+                await service.ToggleUserApprovedStatusAsync(userId);
                 Results.Ok();
             });
 
@@ -41,6 +42,18 @@ namespace BlazingQuiz.Api.Endpoints
                 return Results.File(excelBytes,
                                   "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                                   $"StudentResults_{DateTime.Now:yyyyMMdd_HHmmss}.xlsx");
+            });
+
+            group.MapGet("/user-data", async (int userId, UserService service) =>
+            {
+                await service.GetStudentIdData(userId);
+                Results.Ok();
+            });
+
+            group.MapPatch("/update-user", async (UserUpdateDto dto, UserService service) =>
+            {
+                await service.UpdateUserData(dto);
+                Results.Ok();
             });
 
             return app;

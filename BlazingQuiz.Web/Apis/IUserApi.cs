@@ -12,7 +12,7 @@ namespace BlazingQuiz.Web.Apis
         Task<PagedResult<UserDto>> GetUsersAsync(UserApprovedFilter approvedType, int StartIndex, int pageSize);
 
         [Patch("/api/users/{userId}/toggle-status")]
-        Task ToggleUserApprovedStatusAsync(int userId, string name, string email);
+        Task ToggleUserApprovedStatusAsync(int userId);
 
         [Delete("/api/users/{userId}")]
         Task DeleteUserAsync(int userId); // Добавьте этот метод
@@ -23,5 +23,11 @@ namespace BlazingQuiz.Web.Apis
         // IUserApi.cs
         [Get("/api/users/export-student-results")]
         Task<HttpResponseMessage> ExportStudentResultsAsync();
+
+        [Get("/api/users/user-data")]
+        Task<UserUpdateDto> GetStudentIdData(int studentId);
+
+        [Patch("/api/users/update-user")]
+        Task UpdateUserData(UserUpdateDto user);
     }
 }
