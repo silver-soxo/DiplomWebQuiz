@@ -35,14 +35,14 @@ namespace BlazingQuiz.Shared.DTOs
             if (Questions.Any(q => string.IsNullOrWhiteSpace(q.Text)))
                 return "Отсутвует текст вопроса";
 
+            if (Questions.Any(q => q.Options.Any(o => string.IsNullOrWhiteSpace(o.Text))))
+                return "Отсутвует текст варианта ответа";
+
             if (Questions.Any(q => q.Options.Count < 2))
                 return "Для вопросов требуется минимум 2 варианта ответа";
 
             if (Questions.Any(q => !q.Options.Any(o => o.IsCorrect)))
                 return "Для каждого вопроса необходимо указать правильный вариант ответа";
-
-            if (Questions.Any(q => q.Options.Any(o => string.IsNullOrWhiteSpace(o.Text))))
-                return "Отсутвует текст вопроса";
 
             return null;
         }

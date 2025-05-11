@@ -17,9 +17,9 @@ namespace BlazingQuiz.Api.Endpoints
                 return Results.Ok(await service.GetUsersAsync(approvedType, StartIndex, pageSize));
             });
 
-            group.MapPatch("{userId:int}/toggle-status", async (int userId, UserService service) =>
+            group.MapPatch("{userId:int}/toggle-status", async (int userId, string name, string email, UserService service) =>
             {
-                await service.ToggleUserApprovedStatusAsync(userId);
+                await service.ToggleUserApprovedStatusAsync(userId, name, email);
                 Results.Ok();
             });
 
@@ -33,6 +33,14 @@ namespace BlazingQuiz.Api.Endpoints
             {
                 var result = await service.GetViewStudentQuizesAsync(studentId, startIndex, pageSize);
                 return Results.Ok(result);
+            });
+
+            group.MapGet("/export-student-results", async (UserService service) =>
+            {
+                var excelBytes = await service.ExportStudentResultsAsync();
+                return Results.File(excelBytes,
+                                  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                                  $"StudentResults_{DateTime.Now:yyyyMMdd_HHmmss}.xlsx");
             });
 
             return app;

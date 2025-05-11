@@ -576,3 +576,11 @@ C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\obj\Debug\
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\obj\Debug\net8.0\BlazingQuiz.Api.pdb
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\obj\Debug\net8.0\BlazingQuiz.Api.genruntimeconfig.cache
 C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\obj\Debug\net8.0\ref\BlazingQuiz.Api.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\RBush.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\allah\source\repos\silver-soxo\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\System.IO.Packaging.dll

@@ -29,8 +29,5 @@ namespace BlazingQuiz.Web.Apis
 
         [Post("/api/student/quiz/{studentQuizId}/exit")]
         Task<QuizApiResponse> ExitQuizAsync(int studentQuizId);
-
-
-
     }
 }

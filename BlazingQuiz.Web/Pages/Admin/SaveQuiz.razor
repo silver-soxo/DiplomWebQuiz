@@ -98,17 +98,23 @@
 							</li>
 						}
 					</ol>
-					<!-- Кнопка "Добавить варианта ответа" -->
-					<div class="d-flex justify-content-end"> 
-						<button type="button" class="btn btn-sm btn-info" @onclick="() => q.Options.Add(new())">Добавить варинат ответа</button>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="d-flex justify-content-start"> 
+								<button type="button" class="btn btn-sm btn-danger" @onclick="() => _quiz.Questions.Remove(q)">Удалить вопрос</button>
+							</div>
+						<!-- Кнопка "Добавить варианта ответа" -->
+						<div class="d-flex justify-content-end"> 
+							<button type="button" class="btn btn-sm btn-info" @onclick="() => q.Options.Add(new())">Добавить варинат ответа</button>
+						</div>
 					</div>
+
 				</li>
 			}
 		</ol>
 
 		<!-- Кнопка добавления вопроса -->
 
-		<div class="mt-0 mb-3 d-flex justify-content-center">
+		<div class="mt-3 mb-3 d-flex justify-content-center">
 			<button type="button" class="btn btn-info" @onclick="() => _quiz.Questions.Add(GetDefaultEmptyQuestion())">+ Добавить вопрос</button>
 		</div>
 
@@ -221,6 +227,6 @@
 		NavigationManager.NavigateTo("/admin/manage-quizes");
 	}
 
-	private async Task ShowAlertAsync(string message, string title = "Ошибка") =>
+	private async Task ShowAlertAsync(string message, string title = "") =>
 		await JsRuntime.InvokeVoidAsync("alert", $"{title}\n{message}");
 }

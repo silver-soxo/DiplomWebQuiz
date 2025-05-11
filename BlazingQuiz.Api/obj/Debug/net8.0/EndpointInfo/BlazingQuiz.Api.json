@@ -234,6 +234,22 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -299,6 +315,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/users/export-student-results": {
+      "get": {
+        "tags": [
+          "BlazingQuiz.Api"
         ],
         "responses": {
           "200": {

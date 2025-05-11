@@ -1,31 +1,40 @@
 ﻿@page "/admin/manage-students"
 
+@using System.Net.Mail
+@using System.Net
+@inject IConfiguration Configuration
+
+@inject IJSRuntime JSRuntime
 @inject IUserApi UserApi
 @inject IAppState AppState
-@inject IStudentQuizApi StudentQuizApi
 
 <SectionContent SectionName="pageTitle">Управление студентами</SectionContent>
 
 <div class="row">
-	<div class="col-sm-4 ms-auto mb-3">
-		<label class="form-label">Фильтр по утвержденному статусу</label>
-		<select class="form-control" @bind="_filter" @bind:after="OnFilterChangedAsync">
-			@foreach (var f in Enum.GetValues<UserApprovedFilter>())
-			{
-				if (f == UserApprovedFilter.All)
+	<div class="d-flex justify-content-between align-items-center">
+		<div>
+			<button type="button" class="mt-4 btn btn-sm btn-outline-primary" @onclick="ExportToExcel">Выгрузить рузельтаты тестирований студентов в Excel</button>
+		</div>
+		<div class="col-sm-4 ms-auto mb-3">
+			<label class="form-label">Фильтр по утвержденному статусу</label>
+			<select class="form-control" @bind="_filter" @bind:after="OnFilterChangedAsync">
+				@foreach (var f in Enum.GetValues<UserApprovedFilter>())
 				{
-					<option value="@f">Все</option>
+					if (f == UserApprovedFilter.All)
+					{
+						<option value="@f">Все</option>
+					}
+					else if (f == UserApprovedFilter.ApprovedOnly)
+					{
+						<option value="@f">Подтвержденные пользователи</option>
+					}
+					else
+					{
+						<option value="@f">Неподтвержденные пользователи</option>
+					}
 				}
-				else if (f == UserApprovedFilter.ApprovedOnly)
-				{
-					<option value="@f">Подтвержденные пользователи</option>
-				}
-				else
-				{
-					<option value="@f">Неподтвержденные пользователи</option>
-				}
-			}
-		</select>
+			</select>
+		</div>
 	</div>
 </div>
 <div class="row">
@@ -43,23 +52,37 @@
 				</label>
 			</div>
 		</TemplateColumn>
+
 		<TemplateColumn Title="Действия">
-			<button type="button" class="btn btn-sm btn-success" @onclick="() => ShowStudentResults(context)">Промотр</button>
+			<button type="button" class="btn btn-sm btn-success" @onclick="() => ShowStudentResults(context)">Просмотр результатов тестирований</button>
+			<button type="button" class="btn btn-sm btn-primary" @onclick="() => ShowStudentResults(context)">Редактировать</button>
 			<button type="button" class="btn btn-sm btn-danger" @onclick="() => OnDeleteUserAsync(context)">Удалить</button>
 		</TemplateColumn>
 	</QuickGrid>
-	@* <Paginator State="_paginationState" /> *@
 </div>
 
 @if (_showQuestionsModal)
 {
 	<Modal Title="Вопросы" ActionButtonText="Ok" Size="ModalSize.ExtraLarge"
-		   OnActionButtonClick="() => _showQuestionsModal = false"
-		   OnCancelClick="() => _showQuestionsModal = false">
+	OnActionButtonClick="() => _showQuestionsModal = false"
+	OnCancelClick="() => _showQuestionsModal = false">
 		<QuickGrid ItemsProvider="_itemsProvider" Pagination="_paginationState" Class="table table-striped table-hover">
 			<PropertyColumn Property="q=> q.QuizName" Title="Название теста" />
 			<PropertyColumn Property="q=> q.CategoryName" Title="Название категории" />
-			<PropertyColumn Property="q=> q.Status" Title="Статус" />
+			<TemplateColumn Title="Статус">
+				<span>@{
+						string localizedStatus = context.Status switch
+						{
+							"Started" => "Начат",
+							"Completed" => "Завершён",
+							"Exited" => "Прерван",
+							"AutoSubmitted" => "Отправлен автоматически",
+							_ => context.Status
+						};
+					}
+					@localizedStatus
+				</span>
+			</TemplateColumn>
 			<TemplateColumn Title="Оценка">
 				<span>@context.Score из @context.TotalQuestions</span>
 			</TemplateColumn>
@@ -116,7 +139,7 @@
 		user.IsApproved = !user.IsApproved;
 		_shouldReRender = false;
 		AppState.ShowLoader("Обновление статуса");
-		await UserApi.ToggleUserApprovedStatusAsync(user.Id);
+		await UserApi.ToggleUserApprovedStatusAsync(user.Id, user.Name, user.Email);
 		_shouldReRender = true;
 		AppState.HideLoader();
 	}
@@ -149,9 +172,60 @@
 		{
 			AppState.ShowLoader("Получение результатов тестирований");
 			var pagedResult = await UserApi.GetViewStudentQuizesAsync(user.Id, request.StartIndex, request.Count ?? DefaultPageSize);
+
+			// Локализация статусов
+			foreach (var item in pagedResult.Records)
+			{
+				item.Status = item.Status switch
+				{
+					"Started" => "Начат",
+					"Completed" => "Завершён",
+					"Exited" => "Прерван",
+					"AutoSubmitted" => "Завершён автоматически",
+					_ => item.Status
+				};
+			}
+
 			AppState.HideLoader();
 			return GridItemsProviderResult.From(pagedResult.Records, pagedResult.TotalCount);
 		};
 		_showQuestionsModal = true;
 	}
+
+	// ManageStudent.razor
+	private async Task ExportToExcel()
+	{
+		AppState.ShowLoader("Подготовка данных для выгрузки");
+		try
+		{
+			var response = await UserApi.ExportStudentResultsAsync();
+
+			if (response.IsSuccessStatusCode)
+			{
+				// Читаем поток в массив байтов
+				using var memoryStream = new MemoryStream();
+				await response.Content.CopyToAsync(memoryStream);
+				var fileBytes = memoryStream.ToArray();
+
+				var fileName = response.Content.Headers.ContentDisposition?.FileName ??
+								$"StudentResults_{DateTime.Now:yyyyMMdd_HHmmss}.xlsx";
+
+				// Передаем массив байтов вместо потока
+				await JSRuntime.InvokeVoidAsync("downloadFileFromBytes",
+													fileName,
+													fileBytes,
+													"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+			}
+			else
+			{
+				Console.WriteLine($"Ошибка: {response.StatusCode}");
+			}
+		}
+		finally
+		{
+			AppState.HideLoader();
+		}
+	}
+
+	
 }
