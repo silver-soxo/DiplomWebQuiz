@@ -20,7 +20,8 @@ namespace BlazingQuiz.Api.Endpoints
 
             categoryGroup.MapDelete("{categoryId:int}", async (int categoryId, CategoryService categoryService) =>
             {
-                Results.Ok(await categoryService.DeleteCategoryAsync(categoryId));
+                await categoryService.DeleteCategoryAsync(categoryId);
+                Results.Ok();
             }).RequireAuthorization(p => p.RequireRole(nameof(UserRole.Admin)));
 
             return app; 

@@ -140,35 +140,35 @@
 
     private async Task OnDeleteCategory(CategoryDto category)
     {
-        try
-        {
-            AppState.ShowLoader("Удаление категории");
-            _isBusy = true;
-            var result = await CategoryApi.DeleteCategoryAsync(category.Id);
+        // try
+        // {
+        //     AppState.ShowLoader("Удаление категории");
+        //     _isBusy = true;
+        //     var result = await CategoryApi.DeleteCategoryAsync(category.Id);
 
-            if (!result.IsSuccess)
-            {
-                _errorMessage = result.ErrorMessage;
-                return;
-            }
-            await LoadCategoriesAsync();
-        }
-        catch (Exception ex)
-        {
-            _errorMessage = ex.Message;
-        }
-        finally
-        {
-            AppState.HideLoader();
-            _isBusy = false;
-        }
+        //     if (!result.IsSuccess)
+        //     {
+        //         _errorMessage = result.ErrorMessage;
+        //         return;
+        //     }
+        //     await LoadCategoriesAsync();
+        // }
+        // catch (Exception ex)
+        // {
+        //     _errorMessage = ex.Message;
+        // }
+        // finally
+        // {
+        //     AppState.HideLoader();
+        //     _isBusy = false;
+        // }
 
-        // AppState.ShowLoader("Удаление категории");
-        // _isBusy = true;
-        // var result = await CategoryApi.DeleteCategoryAsync(category.Id);
-        // await LoadCategoriesAsync();
-        // AppState.HideLoader();
-        // _isBusy = false;
+        AppState.ShowLoader("Удаление категории");
+        _isBusy = true;
+        await CategoryApi.DeleteCategoryAsync(category.Id);
+        await LoadCategoriesAsync();
+        AppState.HideLoader();
+        _isBusy = false;
     }
 
 }

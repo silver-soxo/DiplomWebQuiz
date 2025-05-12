@@ -1,4 +1,5 @@
-﻿using BlazingQuiz.Api.Data;
+﻿using System.Net;
+using BlazingQuiz.Api.Data;
 using BlazingQuiz.Api.Data.Entities;
 using BlazingQuiz.Shared.DTOs;
 using Microsoft.EntityFrameworkCore;
@@ -65,18 +66,16 @@ namespace BlazingQuiz.Api.Services
             })
             .ToArrayAsync();
 
-        public async Task<QuizApiResponse> DeleteCategoryAsync(int categoryId)
+        public async Task DeleteCategoryAsync(int categoryId)
         {
             using var transaction = await _context.Database.BeginTransactionAsync();
 
             try
             {
                 // Проверяем существование категории
-                var categoryExists = await _context.Categories
-                    .AnyAsync(c => c.Id == categoryId);
-
-                if (!categoryExists)
-                    return QuizApiResponse.Fail("Категория не найдена");
+                var category = await _context.Categories.FindAsync(categoryId);
+                if (category == null)
+                    throw new ArgumentException("Категория не найдена");
 
                 // Получаем ID всех тестов этой категории
                 var quizIds = await _context.Quizzes
@@ -125,17 +124,15 @@ namespace BlazingQuiz.Api.Services
                     .ExecuteDeleteAsync();
 
                 // Удаляем категорию
-                await _context.Categories
-                    .Where(c => c.Id == categoryId)
-                    .ExecuteDeleteAsync();
+                _context.Categories.Remove(category);
+                await _context.SaveChangesAsync();
 
                 await transaction.CommitAsync();
-                return QuizApiResponse.Success();
             }
-            catch (Exception ex)
+            catch
             {
                 await transaction.RollbackAsync();
-                return QuizApiResponse.Fail($"Ошибка при удалении: {ex.Message}");
+                throw; // Пробрасываем исключение дальше
             }
         }
     }

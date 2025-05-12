@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {}
+    "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {}
   },
   "projects": {
-    "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
+    "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj",
+        "projectUniqueName": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj",
         "projectName": "BlazingQuiz.Shared",
-        "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj",
+        "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\obj\\",
+        "outputPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

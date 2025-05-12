@@ -91830,11 +91830,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\BlazingQuiz.Mobile.csproj",
+      "projectUniqueName": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Mobile\\BlazingQuiz.Mobile.csproj",
       "projectName": "BlazingQuiz.Mobile",
-      "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\BlazingQuiz.Mobile.csproj",
+      "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Mobile\\BlazingQuiz.Mobile.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\",
+      "outputPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Mobile\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -91860,44 +91860,44 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "projectReferences": {
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
+            "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
+              "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
             },
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
+            "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
+              "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
             }
           }
         },
         "net8.0-ios18.0": {
           "targetAlias": "net8.0-ios",
           "projectReferences": {
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
+            "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
+              "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
             },
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
+            "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
+              "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
             }
           }
         },
         "net8.0-maccatalyst18.0": {
           "targetAlias": "net8.0-maccatalyst",
           "projectReferences": {
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
+            "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
+              "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
             },
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
+            "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
+              "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
             }
           }
         },
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "projectReferences": {
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
+            "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj": {
+              "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared.Components\\BlazingQuiz.Shared.Components.csproj"
             },
-            "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
-              "projectPath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
+            "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj": {
+              "projectPath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Shared\\BlazingQuiz.Shared.csproj"
             }
           }
         }

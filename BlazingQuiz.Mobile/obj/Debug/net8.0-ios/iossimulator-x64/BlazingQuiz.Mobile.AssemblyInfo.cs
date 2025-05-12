@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazingQuiz.Mobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fe7d88125e1b4831b6b23e91fd511ba70222cd93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f2b4774f44550bfe9e15c1ddf9e72fed302e8bdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazingQuiz.Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazingQuiz.Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

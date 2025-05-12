@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "27oUD2yvErc=",
+  "dgSpecHash": "FQWdV9uusCQ=",
   "success": true,
-  "projectFilePath": "D:\\DiplomProj\\DiplomWebQuiz\\BlazingQuiz.Mobile\\BlazingQuiz.Mobile.csproj",
+  "projectFilePath": "C:\\Diplom\\DiplomWebQuiz\\BlazingQuiz.Mobile\\BlazingQuiz.Mobile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -248,21 +248,20 @@ namespace BlazingQuiz.Api.Services
         public async Task UpdateUserData(UserUpdateDto user)
         {
             var dbUser = await _context.Users.FirstOrDefaultAsync(q => q.Id == user.Id);
+            if (dbUser == null)
+                throw new Exception("Пользователь не найден");
 
-            dbUser.Id = user.Id;
+            // Обновляем только основные данные
             dbUser.Name = user.Name;
             dbUser.Email = user.Email;
             dbUser.Phone = user.Phone;
 
-            var prof = new User
+            // Хешируем пароль ТОЛЬКО если он был явно передан и не пустой
+            if (!string.IsNullOrEmpty(user.Password))
             {
-                Email = user.Email,
-                Name = user.Name,
-                Phone = user.Phone,
-                Role = nameof(UserRole.Student),
-                IsApproved = false
-            };
-            dbUser.PasswordHash = _passwordHasher.HashPassword(prof, user.Password);
+                dbUser.PasswordHash = _passwordHasher.HashPassword(dbUser, user.Password);
+            }
+
             await _context.SaveChangesAsync();
         }
     }

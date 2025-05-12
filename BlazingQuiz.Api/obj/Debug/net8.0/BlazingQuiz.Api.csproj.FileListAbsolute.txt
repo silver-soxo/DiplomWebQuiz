@@ -592,3 +592,11 @@ D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\ExcelNumberFormat.d
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\RBush.dll
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\SixLabors.Fonts.dll
 D:\DiplomProj\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\ClosedXML.dll
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\RBush.dll
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Diplom\DiplomWebQuiz\BlazingQuiz.Api\bin\Debug\net8.0\System.IO.Packaging.dll

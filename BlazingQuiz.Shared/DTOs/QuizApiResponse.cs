@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,9 +13,11 @@ namespace BlazingQuiz.Shared.DTOs
         public static QuizApiResponse Fail(string errorMessage) => new(false, errorMessage);
     }
 
-    public record QuizApiResponse<TData> (TData Data, bool IsSuccess, string? ErrorMessage)
+    public record QuizApiResponse<TData>(TData Data, bool IsSuccess, string? ErrorMessage)
     {
         public static QuizApiResponse<TData> Success(TData data) => new(data, true, null);
         public static QuizApiResponse<TData> Fail(string errorMessage) => new(default, false, errorMessage);
     }
+
+
 }

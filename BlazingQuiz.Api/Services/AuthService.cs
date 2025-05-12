@@ -30,6 +30,10 @@ namespace BlazingQuiz.Api.Services
                 .AsNoTracking()
                 .FirstOrDefaultAsync(u => u.Email == dto.Username);
 
+            var test = new User
+            {
+                Email = user.Email
+            };
 
             if (user == null)
             {
@@ -40,7 +44,7 @@ namespace BlazingQuiz.Api.Services
             if (!user.IsApproved)
                 return new AuthResponseDto(default, "Ваша учетная запись пока не одобрена");
 
-            var passwordResult = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, dto.Password);
+            var passwordResult = _passwordHasher.VerifyHashedPassword(test, user.PasswordHash, dto.Password);
             if (passwordResult == PasswordVerificationResult.Failed)
             {
                 // Неверный пароль
@@ -68,7 +72,13 @@ namespace BlazingQuiz.Api.Services
                 Role = nameof(UserRole.Student),
                 IsApproved = false
             };
-            user.PasswordHash = _passwordHasher.HashPassword(user, dto.Password);
+
+            var test = new User
+            {
+                Email = dto.Email
+            };
+
+            user.PasswordHash = _passwordHasher.HashPassword(test, dto.Password);
             _context.Users.Add(user);
             try
             {
