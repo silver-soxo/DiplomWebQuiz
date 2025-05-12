@@ -110,7 +110,26 @@
 
 @if (_showUserDataModal)
 {
-	//Реализовать вывод данных пользователя, вывод данных должен быть в 
+	<Modal Title="Редактирование данных студента" ActionButtonText="Сохранить" Size="ModalSize.Default"
+		   OnActionButtonClick="UpdateUserData"
+		   OnCancelClick="() => _showUserDataModal = false">
+		<div class="mb-3">
+			<label class="form-label">Имя</label>
+			<input type="text" class="form-control" @bind="_userData.Name" />
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Email</label>
+			<input type="email" class="form-control" @bind="_userData.Email" />
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Телефон</label>
+			<input type="tel" class="form-control" @bind="_userData.Phone" />
+		</div>
+		<div class="mb-3">
+			<label class="form-label">Пароль (оставьте пустым, чтобы не изменять)</label>
+			<input type="password" class="form-control" @bind="_userData.Password" />
+		</div>
+	</Modal>
 }
 
 @code {
@@ -245,6 +264,20 @@
 		_userData = data;
 
 		_showUserDataModal = true;
+	}
+
+	private async Task UpdateUserData()
+	{
+		_shouldReRender = false;
+		AppState.ShowLoader("Обновление данных студента");
+		await UserApi.UpdateUserData(_userData);
+		_shouldReRender = true;
+		AppState.HideLoader();
+		_showUserDataModal = false;
+
+		// Обновляем данные в таблице
+		if (_grid != null)
+			await _grid.RefreshDataAsync();
 	}
 
 }

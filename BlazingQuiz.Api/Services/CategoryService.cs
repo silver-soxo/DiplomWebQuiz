@@ -64,6 +64,79 @@ namespace BlazingQuiz.Api.Services
                 Id=c.Id
             })
             .ToArrayAsync();
-        
+
+        public async Task<QuizApiResponse> DeleteCategoryAsync(int categoryId)
+        {
+            using var transaction = await _context.Database.BeginTransactionAsync();
+
+            try
+            {
+                // Проверяем существование категории
+                var categoryExists = await _context.Categories
+                    .AnyAsync(c => c.Id == categoryId);
+
+                if (!categoryExists)
+                    return QuizApiResponse.Fail("Категория не найдена");
+
+                // Получаем ID всех тестов этой категории
+                var quizIds = await _context.Quizzes
+                    .Where(q => q.CategoryId == categoryId)
+                    .Select(q => q.Id)
+                    .ToListAsync();
+
+                // Удаляем связанные данные для каждого теста
+                foreach (var quizId in quizIds)
+                {
+                    // Получаем ID вопросов для этого теста
+                    var questionIds = await _context.Questions
+                        .Where(q => q.QuizId == quizId)
+                        .Select(q => q.Id)
+                        .ToListAsync();
+
+                    // Удаляем варианты ответов для вопросов
+                    await _context.Options
+                        .Where(o => questionIds.Contains(o.QuestionId))
+                        .ExecuteDeleteAsync();
+
+                    // Удаляем связи вопросов с результатами тестов
+                    await _context.StudentQuizQuestion
+                        .Where(sqq => questionIds.Contains(sqq.QuestionId))
+                        .ExecuteDeleteAsync();
+
+                    // Удаляем сами вопросы
+                    await _context.Questions
+                        .Where(q => q.QuizId == quizId)
+                        .ExecuteDeleteAsync();
+
+                    // Удаляем результаты тестирований
+                    await _context.StudentQuizQuestion
+                        .Where(sqq => _context.StudentQuizzes
+                            .Any(sq => sq.QuizId == quizId && sq.Id == sqq.StudentQuizId))
+                        .ExecuteDeleteAsync();
+
+                    await _context.StudentQuizzes
+                        .Where(sq => sq.QuizId == quizId)
+                        .ExecuteDeleteAsync();
+                }
+
+                // Удаляем сами тесты
+                await _context.Quizzes
+                    .Where(q => q.CategoryId == categoryId)
+                    .ExecuteDeleteAsync();
+
+                // Удаляем категорию
+                await _context.Categories
+                    .Where(c => c.Id == categoryId)
+                    .ExecuteDeleteAsync();
+
+                await transaction.CommitAsync();
+                return QuizApiResponse.Success();
+            }
+            catch (Exception ex)
+            {
+                await transaction.RollbackAsync();
+                return QuizApiResponse.Fail($"Ошибка при удалении: {ex.Message}");
+            }
+        }
     }
 }

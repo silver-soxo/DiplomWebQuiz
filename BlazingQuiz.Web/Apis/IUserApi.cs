@@ -24,8 +24,8 @@ namespace BlazingQuiz.Web.Apis
         [Get("/api/users/export-student-results")]
         Task<HttpResponseMessage> ExportStudentResultsAsync();
 
-        [Get("/api/users/user-data")]
-        Task<UserUpdateDto> GetStudentIdData(int studentId);
+        [Get("/api/users/{userId}")]
+        Task<UserUpdateDto> GetStudentIdData(int userId);
 
         [Patch("/api/users/update-user")]
         Task UpdateUserData(UserUpdateDto user);

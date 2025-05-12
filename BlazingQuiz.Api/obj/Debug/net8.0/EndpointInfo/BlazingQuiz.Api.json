@@ -81,6 +81,29 @@
         }
       }
     },
+    "/api/categories/{categoryId}": {
+      "delete": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "parameters": [
+          {
+            "name": "categoryId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/quizes": {
       "post": {
         "tags": [
@@ -264,6 +287,28 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "BlazingQuiz.Api"
+        ],
+        "operationId": "GetUserById",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/users/student-quizes": {
@@ -311,29 +356,6 @@
       "get": {
         "tags": [
           "BlazingQuiz.Api"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/users/user-data": {
-      "get": {
-        "tags": [
-          "BlazingQuiz.Api"
-        ],
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
         ],
         "responses": {
           "200": {

@@ -18,9 +18,10 @@ namespace BlazingQuiz.Api.Services
     {
         private readonly QuizContext _context;
         private readonly IPasswordHasher<User> _passwordHasher;
-        public UserService(QuizContext context) 
+        public UserService(QuizContext context, IPasswordHasher<User> passwordHasher) 
         {
             _context = context;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<PagedResult<UserDto>> GetUsersAsync(UserApprovedFilter approvedType, int StartIndex, int pageSize) 
@@ -225,10 +226,22 @@ namespace BlazingQuiz.Api.Services
 
         public async Task<UserUpdateDto> GetStudentIdData(int studentId)
         {
-            var query = await _context.Users.Where(q => q.Id == studentId)
-                .Select(u => new UserUpdateDto(u.Id, u.Name, u.Email, u.Phone, u.PasswordHash)).FirstOrDefaultAsync();
-            return query;
-            
+            var user = await _context.Users
+                .AsNoTracking()
+                .FirstOrDefaultAsync(u => u.Id == studentId);
+
+            if (user == null)
+                throw new Exception("Студент не найден");
+
+            // Создаем DTO без пароля (или с пустым паролем)
+            return new UserUpdateDto
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Email = user.Email,
+                Phone = user.Phone,
+                Password = string.Empty // Не возвращаем хэш пароля клиенту
+            };
         }
 
         //Метод обновления данных пользователя

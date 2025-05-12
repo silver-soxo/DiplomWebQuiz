@@ -44,11 +44,11 @@ namespace BlazingQuiz.Api.Endpoints
                                   $"StudentResults_{DateTime.Now:yyyyMMdd_HHmmss}.xlsx");
             });
 
-            group.MapGet("/user-data", async (int userId, UserService service) =>
+            group.MapGet("{userId:int}", async (int userId, UserService service) =>
             {
-                await service.GetStudentIdData(userId);
-                Results.Ok();
-            });
+                var userData = await service.GetStudentIdData(userId);
+                return Results.Ok(userData);
+            }).WithName("GetUserById");
 
             group.MapPatch("/update-user", async (UserUpdateDto dto, UserService service) =>
             {

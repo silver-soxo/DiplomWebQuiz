@@ -76,6 +76,7 @@
                                 <td>@category.Name</td>
                                 <td>
                                     <button type="button" class="btn btn-sm btn-primary" @onclick="() => OnEditCategory(category)">Редактировать</button>
+                                    <button type="button" class="btn btn-sm btn-danger" @onclick="() => OnDeleteCategory(category)">Удалить</button>
                                 </td>
                             </tr>
                         }
@@ -136,4 +137,38 @@
             _isBusy = false;
         }
     }
+
+    private async Task OnDeleteCategory(CategoryDto category)
+    {
+        try
+        {
+            AppState.ShowLoader("Удаление категории");
+            _isBusy = true;
+            var result = await CategoryApi.DeleteCategoryAsync(category.Id);
+
+            if (!result.IsSuccess)
+            {
+                _errorMessage = result.ErrorMessage;
+                return;
+            }
+            await LoadCategoriesAsync();
+        }
+        catch (Exception ex)
+        {
+            _errorMessage = ex.Message;
+        }
+        finally
+        {
+            AppState.HideLoader();
+            _isBusy = false;
+        }
+
+        // AppState.ShowLoader("Удаление категории");
+        // _isBusy = true;
+        // var result = await CategoryApi.DeleteCategoryAsync(category.Id);
+        // await LoadCategoriesAsync();
+        // AppState.HideLoader();
+        // _isBusy = false;
+    }
+
 }
