@@ -30,15 +30,19 @@ namespace BlazingQuiz.Api.Services
                 .AsNoTracking()
                 .FirstOrDefaultAsync(u => u.Email == dto.Username);
 
-            var test = new User
-            {
-                Email = user.Email
-            };
+            var test = new User { };
 
             if (user == null)
             {
                 // Неверное имя пользователя
                 return new AuthResponseDto(default, "Неверный логин");
+            }
+            else
+            {
+                test = new User
+                {
+                    Email = user.Email
+                };
             }
 
             if (!user.IsApproved)
